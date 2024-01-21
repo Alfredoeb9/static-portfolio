@@ -258,7 +258,113 @@
       <section class="portfolio" id="portfolio">
         <h1>My Work</h1>
         <div class="portfolio_items">
+          <!-- First project -->
+          <figure class="portfolio_item">
+            <img
+              class="portfolio_image"
+              src="img/a1-fitness.png"
+              alt="a1 fitness logger app homepage with fitness equipment as a background"
+            />
+            <figcaption>
+              <h2 class="portfolio_title">A1 Fitness Logger</h2>
+              <!-- <p class="portfolio_desc"></p> -->
+              <a href="#" class="portfolio_link">More info</a>
+            </figcaption>
+
+            <!-- Portfolio modal 1 -->
+            <div class="portfolio_modal">
+              <button class="modal_close" aria-label="Modal Close">
+                <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                  <g transform="translate(-15 -15)">
+                    <polygon
+                      class="st0"
+                      points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                    35.8,16.5 37,17.7 	"
+                    />
+                  </g>
+                </svg>
+              </button>
+              <div class="portfolio_header header-zero">
+                <div class="portfolio_title-box">
+                  <h2 class="portfolio_title">A1 Fitness Logger</h2>
+                  <p class="portfolio_subtitle">
+                    A1 Fitness Logger is a full stack application that allows users to track their workout and track calories burned.
+                  </p>
+                </div>
+              </div>
+              <!-- / portfolio-header -->
+              <div class="portfolio_content">
+                <p>
+                  A1 Fitness Logger was motivated by my fitness journey, Knowingly there are
+                  other applications I could have downloaded, I wanted to create a fitness
+                  logger application of my own. The languages I used were React, Redux/ Reduxjs/toolkit, Node.js, 
+                  Express, Mongodb. 
+                </p>
+
+                <!-- <img class="portfolio-full-width portfolio-modal-image" src="img/portfolio-kingChef-modal1-web.jpg" alt="King Chef front web page image of salmon dish topped with a thin slice of lemon.">  -->
+                <video
+                  id="videoElement"
+                  class="portfolio_full-width portfolio-modal-image"
+                  muted="true"
+                  loop="true"
+                  autoplay="true"
+                  preload="metadata"
+                  poster="img/a1-fitness.png"
+                  playsinline
+                >
+                  <!-- <source 
+                  src="video/Kingchef-Slideshow-phone.mp4" 
+                  type="video/mp4" />                        Load for mobile phones -->
+
+                  <source src="video/a1-fitness.mp4" type="video/mp4" />
+                  <!--  Load for web that load mp4 files -->
+                </video>
+                <!-- <button class="fullScreenVid" id="butFullScreenVid">Make Video Full Screen</button> -->
+                <!-- <div id="portfolio-modal-content"> -->
+                <p class="portfolio-modal-description">
+                  Upon entering A1 Fitness, unauthorized users will only be allowed to view the homepage, login, and signup views. Once 
+                  users create an account, they will be allowed to track their fitness journey and calories per workout.
+                </p>
+                <p class="portfolio-modal-description">
+                  The mission for this application was to learn the cycle of creating a MERN style application from development to production, as well as 
+                  creating a application I would enjoy creating through the very end.
+                </p>
+                <div class="portfolio_function">
+                  <h2 class="portfolio_functionHeading">Stack:</h2>
+                  <ul class="portfolio_functionList">
+                    <li class="portfolio_functionItem">HTML5</li>
+                    <li class="portfolio_functionItem">CSS3</li>
+                    <li class="portfolio_functionItem">React.js</li>
+                    <li class="portfolio_functionItem">Node.js</li>
+                    <li class="portfolio_functionItem">
+                      Express.js
+                    </li>
+                    <li class="portfolio_functionItem">Mongodb</li>
+                  </ul>
+                  <div class="portfolio_btn">
+                    <a
+                      class="portfolio_siteLink"
+                      href="https://fitness-app-front-end-eight.vercel.app/welcome"
+                      target="_blank"
+                      lang="en-us"
+                    >
+                      <button
+                        onclick="window.open('https://fitness-app-front-end-eight.vercel.app/welcome', '_blank')"
+                        class="portfolio_btnSite"
+                      >
+                        View The Website
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /modal -->
+          </figure>
+
           <!-- Portfolio item 1 -->
+
+
           <figure class="portfolio_item">
             <img
               class="portfolio_image"
@@ -527,7 +633,7 @@
           </figure>
 
           <!-- Portfolio item 3 -->
-          <figure class="portfolio_item">
+          <!-- <figure class="portfolio_item">
             <img
               class="portfolio_image"
               src="img/portfolio-03.jpg"
@@ -540,10 +646,10 @@
               </p>
               <a href="#" class="portfolio_link">More info</a>
             </figcaption>
-          </figure>
+          </figure> -->
 
           <!-- Portfolio item 4 -->
-          <figure class="portfolio_item">
+          <!-- <figure class="portfolio_item">
             <img
               class="portfolio_image"
               src="img/portfolio-04-opt.jpg"
@@ -556,7 +662,7 @@
               </p>
               <a href="#" class="portfolio_link">More info</a>
             </figcaption>
-          </figure>
+          </figure> -->
 
           <!-- Portfolio item 5 -->
           <figure class="portfolio_item featured">

@@ -1319,8 +1319,14 @@ main {
   -o-object-position: 0 38px !important;
   object-position: 0 38px !important;
 }
+.header-zero {
+  background: url(../img/a1-fitness-1000.png) no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
 .header-one {
-  background: url(../img/king-chef-resturant-poster.jpg) no-repeat;
+  background: url(../img/king-chef-resturant-big.jpg) no-repeat;
   width: 100%;
   background-size: cover;
   background-position: 50%;
