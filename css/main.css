@@ -1336,7 +1336,12 @@ main {
   background-position: 140px -185px;
 }
 .header-five {
-  background: url('/img/bStadiumModalHeader(desk).jpg') no-repeat;
+  background: url('../img/bStadiumModalHeader(desk).jpg') no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+.header-six {
+  background: url('../img/eleThumbNail-desk.png') no-repeat;
   width: 100%;
   background-size: cover;
 }
