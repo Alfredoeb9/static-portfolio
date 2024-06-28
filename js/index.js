@@ -4,6 +4,7 @@ var focusedElementBeforeModal,
   trueModal = document.querySelector('.portfolio_modal'),
   page = document.querySelector('html'),
   main = document.querySelector('main')
+
 function overLay() {
   document
     .querySelector('.navigation_button')
@@ -11,22 +12,25 @@ function overLay() {
       main.classList.toggle('overlay')
     })
 }
+
 function linkClick() {
-  var e = document.querySelectorAll('.navigation_link'),
-    t = {
+  var navigationLink = document.querySelectorAll('.navigation_link'),
+    navigationList = {
       navigationContainer: document.querySelector('.navigation'),
       navigationButton: document.querySelector('.navigation_button'),
       navigationBackground: document.querySelector('.navigation_background'),
       navigationNav: document.querySelector('.navigation_navigation'),
     }.navigationContainer
-  Array.from(e).forEach(function (e) {
-    e.addEventListener('click', function (e) {
+
+  Array.from(navigationLink).forEach(function (ele) {
+    ele.addEventListener('click', function (e) {
       main.classList.remove('overlay'),
-        t.setAttribute('data-toggle', 'closed'),
+        navigationList.setAttribute('data-toggle', 'closed'),
         (page.style.overflowY = 'scroll')
     })
   })
 }
+
 function ready(e) {
   ;(
     document.attachEvent
@@ -36,30 +40,44 @@ function ready(e) {
     ? e()
     : document.addEventListener('DOMContentLoaded', e)
 }
+
 portfolioContainer.addEventListener('click', function (e) {
   ;(focusedElementBeforeModal = document.activeElement),
     trueModal.addEventListener('keydown', function (e) {
-      9 === e.keyCode &&
+      'Tab' === e.key &&
         (e.shiftKey
           ? document.activeElement === r && (e.preventDefault(), l.focus())
           : document.activeElement === l && (e.preventDefault(), r.focus()))
     }),
     e.preventDefault()
-  var t = e.target.closest('.portfolio_link')
-  if (t) {
-    var n = t.parentNode.nextElementSibling,
-      o = n.querySelector('.modal_close'),
-      a = function e(t) {
-        n.classList.remove('is-open'), n.removeEventListener('animationend', e)
+
+  var portfolioLinkTarget = e.target.closest('.portfolio_link')
+
+  if (portfolioLinkTarget) {
+    var portfolioNextSibling =
+        portfolioLinkTarget.parentNode.nextElementSibling,
+      modalClose = portfolioNextSibling.querySelector('.modal_close'),
+      removeClassandEvent = function removeProperties(portfolioLinkTarget) {
+        portfolioNextSibling.classList.remove('is-open'),
+          portfolioNextSibling.removeEventListener(
+            'animationend',
+            removeProperties
+          )
       }
-    o.addEventListener('click', function (e) {
-      ;(n.style.animation = 'modalOut 500ms forwards'),
-        n.addEventListener('animationend', a)
+    modalClose.addEventListener('click', function () {
+      ;(portfolioNextSibling.style.animation = 'modalOut 500ms forwards'),
+        portfolioNextSibling.addEventListener(
+          'animationend',
+          removeClassandEvent
+        )
     }),
       document.addEventListener('keydown', function (e) {
-        27 === e.keyCode &&
-          ((n.style.animation = 'modalOut 500ms forwards'),
-          n.addEventListener('animationend', a),
+        'Esc' === e.key &&
+          ((portfolioNextSibling.style.animation = 'modalOut 500ms forwards'),
+          portfolioNextSibling.addEventListener(
+            'animationend',
+            removeClassandEvent
+          ),
           (document.body.style.overflowY = 'scroll'))
       })
     var i = trueModal.querySelectorAll(
@@ -68,24 +86,25 @@ portfolioContainer.addEventListener('click', function (e) {
       r = (i = Array.prototype.slice.call(i))[0],
       l = i[i.length - 1]
     r.focus(),
-      n.classList.add('is-open'),
-      (n.style.animation = 'modalIn 500ms forwards')
+      portfolioNextSibling.classList.add('is-open'),
+      (portfolioNextSibling.style.animation = 'modalIn 500ms forwards')
   }
 }),
   linkClick(),
   ready(function () {
-    var n = {
+    var navigationLinks = {
       navigationContainer: document.querySelector('.navigation'),
       navigationButton: document.querySelector('.navigation_button'),
       navigationBackground: document.querySelector('.navigation_background'),
       navigationNav: document.querySelector('.navigation_navigation'),
     }
-    n.navigationButton.addEventListener('click', function (e) {
-      var t = n.navigationContainer
-      'closed' === t.getAttribute('data-toggle')
-        ? (t.setAttribute('data-toggle', 'open'),
+
+    navigationLinks.navigationButton.addEventListener('click', function () {
+      var element = navigationLinks.navigationContainer
+      'closed' === element.getAttribute('data-toggle')
+        ? (element.setAttribute('data-toggle', 'open'),
           (page.style.overflowY = 'hidden'))
-        : (t.setAttribute('data-toggle', 'closed'),
+        : (element.setAttribute('data-toggle', 'closed'),
           (page.style.overflowY = 'scroll'))
     }),
       overLay()
