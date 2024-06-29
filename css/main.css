@@ -1377,13 +1377,15 @@ main {
   margin: 0 auto;
   padding-bottom: 2em;
 }
-.portfolio_content p {
+.portfolio_content p,
+ul {
   font-size: 2.4rem;
   padding: 2rem 0;
   text-align: left;
 }
 @media (max-width: 36em) {
-  .portfolio_content p {
+  .portfolio_content p,
+  ul {
     font-size: 2.5rem;
   }
 }
