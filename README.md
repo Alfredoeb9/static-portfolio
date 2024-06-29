@@ -1,3 +1,5 @@
+![Vercel Badge](https://deploy-badge.vercel.app/?url=https://alfredo-dev.vercel.app/&name=website)
+
 # Personal Portfolio
 
 Hello all! Looks like you have landed on my portfolio github and I thank you for that!
