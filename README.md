@@ -1,4 +1,4 @@
-![Vercel Badge](https://deploy-badge.vercel.app/?url=https://alfredo-dev.vercel.app/&name=website)
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/ele-t3)
 
 # Personal Portfolio
 
