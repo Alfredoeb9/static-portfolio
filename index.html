@@ -71,7 +71,7 @@
             <li class="navigation_list">
               <a
                 class="navigation_link"
-                href="#about-me"
+                href="./index.html/#about-me"
                 hreflang="en"
                 type="text/html"
                 title="Home"
@@ -82,7 +82,7 @@
             <li class="navigation_list">
               <a
                 class="navigation_link"
-                href="#portfolio"
+                href="./index.html/#portfolio"
                 hreflang="en"
                 type="text/html"
                 title="Portfolio"
@@ -348,23 +348,31 @@
                 </p>
 
                 <!-- <img class="portfolio-full-width portfolio-modal-image" src="img/portfolio-kingChef-modal1-web.jpg" alt="King Chef front web page image of salmon dish topped with a thin slice of lemon.">  -->
-                <video
-                  id="videoElement"
-                  class="portfolio_full-width portfolio-modal-image"
-                  muted="true"
-                  loop="true"
-                  autoplay="true"
-                  preload="metadata"
-                  poster="img/a1-fitness.png"
-                  playsinline
-                >
-                  <!-- <source 
+                <div class="portfolio_iMacContainer">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="desktop-wrapper">
+                        <video
+                          class="fillwidth modal_video"
+                          muted="true"
+                          loop="true"
+                          autoplay="true"
+                          preload="metadata"
+                          poster="img/a1-fitness.png"
+                          playsinline
+                        >
+                          <!-- <source 
                   src="video/Kingchef-Slideshow-phone.mp4" 
                   type="video/mp4" />                        Load for mobile phones -->
 
-                  <source src="video/a1-fitness.mp4" type="video/mp4" />
-                  <!--  Load for web that load mp4 files -->
-                </video>
+                          <source src="video/a1-fitness.mp4" type="video/mp4" />
+                          <!--  Load for web that load mp4 files -->
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- <button class="fullScreenVid" id="butFullScreenVid">Make Video Full Screen</button> -->
                 <!-- <div id="portfolio-modal-content"> -->
                 <p class="portfolio-modal-description">
@@ -385,7 +393,7 @@
                 >
                   <h4>Want To Track my Tickets?</h4>
                   <p>
-                    Kanban Board:
+                    <b>Kanban Board:</b>
                     <a
                       href="https://github.com/users/Alfredoeb9/projects/4"
                       target="_blank"
@@ -394,10 +402,21 @@
                       >A1 Fitness Board</a
                     >
                   </p>
+
+                  <p>
+                    <b>Github:</b>
+                    <a
+                      href="https://github.com/Alfredoeb9/Fitness-App-FrontEnd"
+                      target="_blank"
+                      class="buttonLink"
+                      onclick="window.open('https://github.com/Alfredoeb9/Fitness-App-FrontEnd', '_blank')"
+                      >A1 Fitness Github</a
+                    >
+                  </p>
                 </div>
 
                 <div class="portfolio_function">
-                  <h2 class="portfolio_functionHeading">Stack:</h2>
+                  <h2 class="portfolio_functionHeading">Tech Stack:</h2>
                   <ul class="portfolio_functionList">
                     <li class="portfolio_functionItem">HTML5</li>
                     <li class="portfolio_functionItem">CSS3</li>
@@ -471,30 +490,38 @@
                   react notifications and stripe checkout.
                 </p>
 
-                <!-- <img class="portfolio-full-width portfolio-modal-image" src="img/portfolio-kingChef-modal1-web.jpg" alt="King Chef front web page image of salmon dish topped with a thin slice of lemon.">  -->
-                <video
-                  id="videoElement"
-                  class="portfolio_full-width portfolio-modal-image"
-                  muted="true"
-                  loop="true"
-                  autoplay="true"
-                  preload="metadata"
-                  poster="img/a1-ecommerce.png"
-                  playsinline
-                >
-                  <!-- <source 
+                <div class="portfolio_iMacContainer">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="desktop-wrapper">
+                        <video
+                          id="videoElement"
+                          class="fillwidth modal_video"
+                          muted="true"
+                          loop="true"
+                          autoplay="true"
+                          preload="metadata"
+                          poster="img/a1-ecommerce.png"
+                          playsinline
+                        >
+                          <!-- <source 
                   src="video/Kingchef-Slideshow-phone.mp4" 
                   type="video/mp4" />                        Load for mobile phones -->
 
-                  <source src="video/A1_SNKRS .mp4" type="video/mp4" />
-                  <!--  Load for web that load mp4 files -->
+                          <source src="video/A1_SNKRS.mp4" type="video/mp4" />
+                          <!--  Load for web that load mp4 files -->
 
-                  <!-- <source 
+                          <!-- <source 
                   src="video/Kingchef-Slideshow-web.mkv"
                   type="video/mkv"/>                        Load for web that load mkv files -->
 
-                  <!-- <track src="subtitles-en.vtt" label="English captions" kind="captions" srclang="en"> -->
-                </video>
+                          <!-- <track src="subtitles-en.vtt" label="English captions" kind="captions" srclang="en"> -->
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- <button class="fullScreenVid" id="butFullScreenVid">Make Video Full Screen</button> -->
                 <!-- <div id="portfolio-modal-content"> -->
                 <p class="portfolio-modal-description">
@@ -519,8 +546,25 @@
                     >(slideShow)</a
                   > -->
                 </p>
+
+                <div
+                  class="portfolio-modal-github-board portfolio-modal-description"
+                >
+                  <h4>Want To Track my Github?</h4>
+                  <p>
+                    <b>Github:</b>
+
+                    <a
+                      href="https://github.com/Alfredoeb9/a1-ecommerce"
+                      target="_blank"
+                      class="buttonLink"
+                      onclick="window.open('https://github.com/Alfredoeb9/a1-ecommerce', '_blank')"
+                      >A1 Kicks Github</a
+                    >
+                  </p>
+                </div>
                 <div class="portfolio_function">
-                  <h2 class="portfolio_functionHeading">Functions:</h2>
+                  <h2 class="portfolio_functionHeading">Tech Stack:</h2>
                   <ul class="portfolio_functionList">
                     <li class="portfolio_functionItem">HTML5</li>
                     <li class="portfolio_functionItem">CSS3</li>
@@ -548,12 +592,6 @@
                     </a>
                   </div>
                 </div>
-
-                <!-- <img class="portfolio-pull-left" src="img/portfolio-01.jpg" alt="an image">  -->
-                <!-- <p class="portfolio-modal-description">Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p> -->
-                <!-- <p class="portfolio-modal-description">Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p> -->
-                <!-- <img class="portfolio-pull-right" src="img/portfolio-01.jpg" alt="an image">  -->
-                <!-- </div> -->
               </div>
             </div>
             <!-- /modal -->
@@ -600,25 +638,65 @@
                   built using React, material ui, redux, redux-thunk, Node.js,
                   Express, Mongodb.
                 </p>
-                <img
-                  class="portfolio_full-width mvlStockPhoto"
-                  src="img/geolocation-1000.png"
-                  alt="geolocation home page image of world"
-                />
-                <p class="portfolio_firstPassage">
+                <div class="portfolio_iMacContainer">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="desktop-wrapper">
+                        <video
+                          class="fillwidth modal_video"
+                          playsinline
+                          muted
+                          loop
+                          autoplay
+                          preload="metadata"
+                          width="560"
+                          height="315"
+                        >
+                          <source
+                            src="video/geolocation.mp4"
+                            type="video/mp4"
+                          />
+
+                          <!-- <source
+                            src="video/mvlLandscapeOpt.m4v"
+                            type="video/m4v"
+                          /> -->
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="portfolio-modal-description">
                   Though this application is not rich in css the main motivation
                   behind creating this application was, I wanted to test my
                   skill and built a full stack secure application from
                   development to production.
                 </p>
-                <p class="portfolio_firstPassage">
+                <p class="portfolio-modal-description">
                   The main challenge I was faced while creating geolocation was
                   implementing the verify email/ activate user token. Through
                   trial and error I was able to create a secure authenication
                   method.
                 </p>
+
+                <div
+                  class="portfolio-modal-github-board portfolio-modal-description"
+                >
+                  <h4>Want To Track my Github?</h4>
+                  <p>
+                    <b>Github:</b>
+
+                    <a
+                      href="https://github.com/Alfredoeb9/geolocation-quiz-frontend"
+                      target="_blank"
+                      class="buttonLink"
+                      onclick="window.open('https://github.com/Alfredoeb9/geolocation-quiz-frontend', '_blank')"
+                      >Geolocation Github</a
+                    >
+                  </p>
+                </div>
                 <div class="portfolio_function">
-                  <h2 class="portfolio_functionHeading">Stack:</h2>
+                  <h2 class="portfolio_functionHeading">Tech Stack:</h2>
                   <ul class="portfolio_functionList">
                     <li class="portfolio_functionItem">React</li>
                     <li class="portfolio_functionItem">Material ui</li>
@@ -648,53 +726,6 @@
                     </a>
                   </div>
                 </div>
-
-                <div class="portfolio_iMacContainer">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="desktop-wrapper">
-                        <video
-                          class="fillwidth modal_video"
-                          playsinline
-                          muted
-                          loop
-                          autoplay
-                          preload="metadata"
-                          width="560"
-                          height="315"
-                        >
-                          <source
-                            src="video/geolocation.mp4"
-                            type="video/mp4"
-                          />
-
-                          <!-- <source
-                            src="video/mvlLandscapeOpt.m4v"
-                            type="video/m4v"
-                          /> -->
-                        </video>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- <div class="portfolio_iMacContainer">
-                <div class="portfolio_iMac">
-                  <video class="portfolio_iMacVid "muted="true" loop="true" autoplay="true" preload="metadata" >
-                    <source
-                      src="video/mvlLandscapeOpt.mp4"
-                      type="video/mp4" />
-    
-                    <source
-                      src="video/mvlLandscapeOpt.m4v"
-                      type="video/m4v"/>
-                  </video>
-                </div>
-              </div> -->
-                <!-- <img class="portfolio_iMac" src="img/imac_mockup.png" alt="an image">  -->
-
-                <!-- <p>While Scrolling through MVL Landscape</p>
-              <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p> -->
-                <!-- <img class="portfolio_pull-right" src="img/portfolio-02.jpg" alt="an image">  -->
               </div>
             </div>
           </figure>
@@ -768,63 +799,6 @@
                     >(github: gulpv4)</a
                   >
                 </p>
-                <img
-                  class="portfolio_full-width"
-                  src="img/bStadiumCover(desk).jpg"
-                  alt="an image"
-                />
-                <p class="portfolio_firstPassage">
-                  What I mainly focused on when redesigning this website was
-                  refactoring all the code to be SEO safe, 100 score in
-                  lighthouse audit, image lazy loading, and accesible across all
-                  devices.
-                </p>
-                <p class="portfolio_firstPassage">
-                  The main challenge here was how to lazy load the images
-                  offscreen as I have never done this before but accomplished.
-                  Lazy load is when you only load a certain image file only when
-                  the image is in view of your screen to help save data on
-                  mobile and save loading assets.
-                </p>
-                <div class="portfolio_function">
-                  <h2 class="portfolio_functionHeading">Functions:</h2>
-                  <ul class="portfolio_functionList">
-                    <li class="portfolio_functionItem">HTML5</li>
-                    <li class="portfolio_functionItem">CSS3</li>
-                    <li class="portfolio_functionItem">SASS(SCSS)</li>
-                    <li class="portfolio_functionItem">jQuery</li>
-                    <li class="portfolio_functionItem">
-                      JavaScript ES6(Babel)
-                    </li>
-                    <li class="portfolio_functionItem">Gulp 4</li>
-                  </ul>
-                  <div class="portfolio_btn">
-                    <a
-                      class="portfolio_siteLink"
-                      href="https://b-stadium.vercel.app/index.html"
-                      lang="en-us"
-                    >
-                      <button
-                        onclick="window.open('https://b-stadium.vercel.app/index.html', '_blank')"
-                        class="portfolio_btnSite"
-                      >
-                        View The Website
-                      </button>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- <div class="portfolio_iMac">
-                  <video class="portfolio_iMacVid bStadiumVid"  muted="true" loop="true" autoplay="true" preload="metadata" >
-                    <source
-                      src="video/BstadiumDemo-web.mp4"
-                      type="video/mp4" />
-      
-                    <source
-                      src="video/mvlLandscapeOpt.m4v"
-                      type="video/m4v"/>
-                  </video>
-                </div> -->
                 <div class="portfolio_iMacContainer">
                   <div class="row">
                     <div class="col-sm-12">
@@ -852,19 +826,63 @@
                     </div>
                   </div>
                 </div>
-                <!-- <img class="portfolio_iMac" src="img/imac_mockup.png" alt="an image"> 
-                <video class="portfolio_iMacVid bStadiumVid"  muted="true" loop="true" autoplay="true" preload="metadata" >
-                  <source
-                    src="video/BstadiumDemo-web.mp4"
-                    type="video/mp4" />
-    
-                  <source
-                    src="video/mvlLandscapeOpt.m4v"
-                    type="video/m4v"/>
-                </video> -->
-                <!-- <p>While Scrolling through MVL Landscape</p>
-                <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p> -->
-                <!-- <img class="portfolio_pull-right" src="img/portfolio-02.jpg" alt="an image">  -->
+                <p class="portfolio-modal-description">
+                  What I mainly focused on when redesigning this website was
+                  refactoring all the code to be SEO safe, 100 score in
+                  lighthouse audit, image lazy loading, and accesible across all
+                  devices.
+                </p>
+                <p class="portfolio-modal-description">
+                  The main challenge here was how to lazy load the images
+                  offscreen as I have never done this before but accomplished.
+                  Lazy load is when you only load a certain image file only when
+                  the image is in view of your screen to help save data on
+                  mobile and save loading assets.
+                </p>
+
+                <div
+                  class="portfolio-modal-github-board portfolio-modal-description"
+                >
+                  <h4>Want To Track my Github?</h4>
+                  <p>
+                    <b>Github:</b>
+
+                    <a
+                      href="https://github.com/Alfredoeb9/bStadium"
+                      target="_blank"
+                      class="buttonLink"
+                      onclick="window.open('https://github.com/Alfredoeb9/bStadium', '_blank')"
+                      >bStadium Github</a
+                    >
+                  </p>
+                </div>
+                <div class="portfolio_function">
+                  <h2 class="portfolio_functionHeading">Tech Stack:</h2>
+                  <ul class="portfolio_functionList">
+                    <li class="portfolio_functionItem">HTML5</li>
+                    <li class="portfolio_functionItem">CSS3</li>
+                    <li class="portfolio_functionItem">SASS(SCSS)</li>
+                    <li class="portfolio_functionItem">jQuery</li>
+                    <li class="portfolio_functionItem">
+                      JavaScript ES6(Babel)
+                    </li>
+                    <li class="portfolio_functionItem">Gulp 4</li>
+                  </ul>
+                  <div class="portfolio_btn">
+                    <a
+                      class="portfolio_siteLink"
+                      href="https://b-stadium.vercel.app/index.html"
+                      lang="en-us"
+                    >
+                      <button
+                        onclick="window.open('https://b-stadium.vercel.app/index.html', '_blank')"
+                        class="portfolio_btnSite"
+                      >
+                        View The Website
+                      </button>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </figure>
@@ -972,7 +990,8 @@
                   <p>Follow along the code journey</p>
                   <ul class="portfolio_github">
                     <li>
-                      Github:<a
+                      <b> Github:</b>
+                      <a
                         href="https://github.com/Alfredoeb9/ele?tab=readme-ov-file#ele-main-app"
                         target="_blank"
                         onclick="window.open('https://github.com/Alfredoeb9/ele?tab=readme-ov-file#ele-main-app', '_blank')"
@@ -980,7 +999,7 @@
                       >
                     </li>
                     <li>
-                      Kanban Board:
+                      <b>Kanban Board:</b>
                       <a
                         href="https://github.com/users/Alfredoeb9/projects/7"
                         target="_blank"
@@ -991,7 +1010,7 @@
                   </ul>
                 </div>
                 <div class="portfolio_function">
-                  <h2 class="portfolio_functionHeading">Functions:</h2>
+                  <h2 class="portfolio_functionHeading">Tech Stack:</h2>
                   <ul class="portfolio_functionList">
                     <li class="portfolio_functionItem">HTML5</li>
                     <li class="portfolio_functionItem">CSS3</li>
@@ -1019,58 +1038,6 @@
                     </a>
                   </div>
                 </div>
-
-                <!-- <div class="portfolio_iMac">
-                  <video class="portfolio_iMacVid bStadiumVid"  muted="true" loop="true" autoplay="true" preload="metadata" >
-                    <source
-                      src="video/BstadiumDemo-web.mp4"
-                      type="video/mp4" />
-      
-                    <source
-                      src="video/mvlLandscapeOpt.m4v"
-                      type="video/m4v"/>
-                  </video>
-                </div> -->
-                <!-- <div class="portfolio_iMacContainer">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="desktop-wrapper">
-                        <video
-                          class="fillwidth modal_video"
-                          playsinline
-                          muted
-                          loop
-                          autoplay
-                          preload="metadata"
-                          width="560"
-                          height="315"
-                        >
-                          <source
-                            src="video/BstadiumDemo-web.mp4"
-                            type="video/mp4"
-                          /> -->
-
-                <!-- <source
-                            src="video/mvlLandscapeOpt.m4v"
-                            type="video/m4v"/> -->
-                <!-- </video>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- <img class="portfolio_iMac" src="img/imac_mockup.png" alt="an image"> 
-                <video class="portfolio_iMacVid bStadiumVid"  muted="true" loop="true" autoplay="true" preload="metadata" >
-                  <source
-                    src="video/BstadiumDemo-web.mp4"
-                    type="video/mp4" />
-    
-                  <source
-                    src="video/mvlLandscapeOpt.m4v"
-                    type="video/m4v"/>
-                </video> -->
-                <!-- <p>While Scrolling through MVL Landscape</p>
-                <p>Aenean mattis tristique elementum. Duis massa tellus, tempus non fermentum at, venenatis et augue. Phasellus tristique purus sed sagittis interdum. Duis luctus sapien justo, vel viverra ex convallis et. Maecenas suscipit lacus ut lectus mattis ornare. Vestibulum faucibus purus sit amet erat lobortis, tristique fringilla leo sodales. Interdum et malesuada fames ac ante.</p> -->
-                <!-- <img class="portfolio_pull-right" src="img/portfolio-02.jpg" alt="an image">  -->
               </div>
             </div>
           </figure>
