@@ -41,7 +41,7 @@ function ready(e) {
     : document.addEventListener('DOMContentLoaded', e)
 }
 
-portfolioContainer.addEventListener('click', function (e) {
+portfolioContainer?.addEventListener('click', function (e) {
   ;(focusedElementBeforeModal = document.activeElement),
     trueModal.addEventListener('keydown', function (e) {
       'Tab' === e.key &&
@@ -101,7 +101,7 @@ portfolioContainer.addEventListener('click', function (e) {
       navigationNav: document.querySelector('.navigation_navigation'),
     }
 
-    navigationLinks.navigationButton.addEventListener('click', function () {
+    navigationLinks?.navigationButton?.addEventListener('click', function () {
       var element = navigationLinks.navigationContainer
       'closed' === element.getAttribute('data-toggle')
         ? (element.setAttribute('data-toggle', 'open'),
