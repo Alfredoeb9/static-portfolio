@@ -54,8 +54,10 @@
     <!-- End Google Tag Manager (noscript) -->
     <header class="navigation" data-toggle="closed">
       <div class="navigation_sideContainer">
-        <div class="navigation_sideBar"></div>
-        <p class="navigation_home">Alfredo E.B.</p>
+        <div class="navigation_sideBar">
+          <!-- <p class="navigation_home">Alfredo E.B.</p> -->
+        </div>
+
         <!-- <input type="checkbox" class="navigation_checkbox" id="navi-toggle" /> -->
 
         <button class="navigation_button">
@@ -71,7 +73,7 @@
             <li class="navigation_list">
               <a
                 class="navigation_link"
-                href="./index.html/#about-me"
+                href="./index.html#about-me"
                 hreflang="en"
                 type="text/html"
                 title="Home"
@@ -82,7 +84,7 @@
             <li class="navigation_list">
               <a
                 class="navigation_link"
-                href="./index.html/#portfolio"
+                href="./index.html#portfolio"
                 hreflang="en"
                 type="text/html"
                 title="Portfolio"
@@ -160,28 +162,28 @@
               </button>
             </div>
 
-            <div class="flex flex-col gap-4 mt-40 sm:mt-15 md:mt-24">
+            <div class="flex flex-col gap-4 mt-4 sm:mt-4 md:mt-4">
               <!-- <img class="social_icon" src="img/twitter.svg" alt="twitter"> -->
               <a
                 href="https://www.linkedin.com/in/alfbar/"
-                class="flex text-3xl"
+                class="flex text-lg"
               >
                 <img
                   src="img/linkedin.svg"
                   alt="www.linkedin.com"
-                  class="bg-slate-500 max-w-16 w-full mr-2"
+                  class="bg-slate-500 max-w-10 w-full mr-2"
                 />
                 linkedin.com/alfbar
               </a>
               <a
                 href="https://github.com/Alfredoeb9"
                 target="_blank"
-                class="flex text-3xl"
+                class="flex text-lg"
               >
                 <img
                   src="img/github.svg"
                   alt="www.github.com"
-                  class="bg-slate-500 max-w-16 w-full mr-2"
+                  class="bg-slate-500 max-w-10 w-full mr-2"
                 />
                 github.com/Alfredoeb9
               </a>
@@ -963,12 +965,15 @@
                   Router), React.js, Typescript, Tanstack React-Query, Redux,
                   SQLite, TRPC, Drizzle ORM, with TursoDB.
                 </p>
-                <img
-                  class="portfolio_full-width"
-                  src="img/eleThumbNail-desk.png"
-                  alt="an image"
-                />
-                <p class="portfolio_firstPassage">
+
+                <div>
+                  <img
+                    class="modal_image"
+                    src="img/eleThumbNail-desk.png"
+                    alt="an image"
+                  />
+                </div>
+                <p class="portfolio-modal-description">
                   When brainstroming this application, thinking of what tech
                   stack to use was the probably the most time consuming process
                   during the inital developement. I knew I wanted something
@@ -982,7 +987,7 @@
                   ready applications using Next.js as their framework and made
                   the ultimate decision to use Next.js.
                 </p>
-                <p class="portfolio_firstPassage">
+                <p class="portfolio-modal-description">
                   The main challenge here after deciding Next.js as my framework
                   was what other technology should I use with Next.js, should I
                   prisma as my ORM or adopt the new
@@ -1013,7 +1018,9 @@
                   Redux, SQLite, TRPC, Drizzle ORM, with TursoDB.
                 </p>
 
-                <div class="portfolio_firstPassage">
+                <div
+                  class="portfolio-modal-description portfolio-modal-github-board"
+                >
                   <p>Follow along the code journey</p>
                   <ul class="portfolio_github">
                     <li>
