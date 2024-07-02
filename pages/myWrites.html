@@ -21,11 +21,12 @@
     </script>
   </head>
   <body>
-    <h1 class="text-yellow-500 text-3xl font-bold underline">Hello world!</h1>
     <header class="navigation" data-toggle="closed">
       <div class="navigation_sideContainer">
-        <div class="navigation_sideBar"></div>
-        <p class="navigation_home">Alfredo E.B.</p>
+        <div class="navigation_sideBar">
+          <!-- <p class="navigation_home">Alfredo E.B.</p> -->
+        </div>
+
         <!-- <input type="checkbox" class="navigation_checkbox" id="navi-toggle" /> -->
 
         <button class="navigation_button">
@@ -84,36 +85,49 @@
       </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero_container">
-          <div class="hero_content">
-            <h1>My Technical Writes</h1>
-            <p>Welcome to my rants, hope you leave learning something</p>
+    <main class="min-w-full max-w-full">
+      <section class="hero w-full h-[65vh]">
+        <div class="hero_container flex justify-center items-center h-[50vh]">
+          <div class="hero_content px-3">
+            <h1 class="text-4xl md:text:4xl">My Technical Writes</h1>
+            <p class="text-2xl">
+              Welcome to my rants, hope you leave learning something
+            </p>
           </div>
         </div>
       </section>
 
       <section class="recent_blog">
-        <div class="recent_blog_container">
-          <div class="recent_blog_content">
-            <div class="recent_blog_img">
+        <div
+          class="recent_blog_container h-[70vh] flex justify-center items-center"
+        >
+          <div
+            class="recent_blog_content block md:flex md:justify-center md:items-center"
+          >
+            <div class="recent_blog_img md:mr-8">
               <img
                 src="../img/bStadiumThumbNail-opt.jpg"
                 alt="bstadium image"
+                class="max-w-80 md:max-w-96"
               />
             </div>
 
-            <div class="recent_blog_content_data">
-              <div class="recent_blog_content_metaData">
-                <p>Date</p>
-                <p>4 Minute Read</p>
+            <div class="recent_blog_content_data mt-2">
+              <div
+                class="recent_blog_content_metaData flex justify-between text-white"
+              >
+                <p class="bg-gray-400 px-1 py-1 rounded-lg">Date</p>
+                <p class="bg-gray-400 px-1 py-1 rounded-lg">4 Minute Read</p>
               </div>
 
-              <div>
-                <h3>Article Title</h3>
-                <p>** Article Description **</p>
-                <button>Read This Blog</button>
+              <div class="mt-2">
+                <h3 class="text-xl">Article Title</h3>
+                <p class="text-lg">** Article Description **</p>
+                <button
+                  class="text-md bg-cyan-600 text-white px-3 py-2 rounded-lg mt-2"
+                >
+                  Read This Blog
+                </button>
               </div>
             </div>
           </div>
