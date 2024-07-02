@@ -15,10 +15,10 @@
   -o-box-sizing: inherit;
 }
 html {
-  font-size: 62.5%;
+  /* font-size: 62.5%; */
   overflow-x: hidden;
 }
-@media (max-width: 75em) {
+/* @media (max-width: 75em) {
   html {
     font-size: 58%;
   }
@@ -42,7 +42,7 @@ html {
   html {
     font-size: 70.5%;
   }
-}
+} */
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -56,7 +56,7 @@ h1 {
 }
 @media (min-width: 50em) {
   h1 {
-    font-size: 4.25rem;
+    font-size: 3.45rem;
   }
 }
 h2 {
@@ -70,11 +70,11 @@ h2 {
     sans-serif;
   font-weight: 400;
 }
-@media (min-width: 50em) {
+/* @media (min-width: 50em) {
   h2 {
     font-size: 3rem;
   }
-}
+} */
 .disabled {
   opacity: 0.2;
 }
@@ -89,13 +89,13 @@ h2 {
 .btnScroll {
   position: absolute;
   display: block;
-  bottom: -7rem;
-  right: 27rem;
-  font-size: 2rem;
+  bottom: -6rem;
+  right: 24rem;
+  font-size: 1.5rem;
   border: none;
   background: #ececec;
   padding: 2rem;
-  height: 220px;
+  height: 185px;
   width: 220px;
   text-align: left;
 }
@@ -112,12 +112,12 @@ h2 {
 }
 @media (max-width: 62em) {
   .btnScroll h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 48em) {
   .btnScroll h2 {
-    font-size: 4rem;
+    font-size: 2.2rem;
   }
 }
 .btnScroll svg {
@@ -277,7 +277,7 @@ h2 {
 }
 .navigation_link {
   color: #fff;
-  font-size: 4rem;
+  font-size: 2.3rem;
   list-style-type: none;
   text-decoration: none;
 }
@@ -286,8 +286,8 @@ h2 {
   display: block;
   opacity: 1;
   background-color: #000;
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
   position: fixed;
   top: 4rem;
   left: 1rem;
@@ -306,7 +306,7 @@ h2 {
 .navigation_icon,
 .navigation_icon:after,
 .navigation_icon:before {
-  width: 3rem;
+  width: 2.4rem;
   height: 2px;
   background-color: #fff;
   display: inline-block;
@@ -450,15 +450,23 @@ main {
   }
 }
 .welcome_content {
-  padding: 10rem 0 0 15rem;
+  padding: 3rem 0 0 15rem;
   position: relative;
-  top: 8rem;
+  top: 0rem;
 }
-@media screen and (max-width: 1230px) {
+
+@media screen and (max-width: 1360px) and (max-height: 660px) {
+  .welcome_content {
+    padding: 0rem 0 0 1rem;
+    top: 0;
+  }
+}
+
+/* @media screen and (max-width: 1230px) {
   .welcome_content {
     top: 2rem;
   }
-}
+} */
 @media (max-width: 62em) {
   .welcome_content {
     height: 100%;
@@ -513,14 +521,14 @@ main {
   }
 }
 .welcome_heading {
-  font-size: 5rem;
+  font-size: 3.5rem;
   margin: 0;
   color: red;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.19);
 }
 @media (max-width: 48em) {
   .welcome_heading {
-    font-size: 6.3rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 36em) {
@@ -532,12 +540,12 @@ main {
 }
 .welcome_description {
   width: 85%;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   padding: 2rem 0;
 }
 @media (max-width: 48em) {
   .welcome_description {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 36em) {
@@ -576,7 +584,7 @@ main {
   outline: none;
   border: none;
   border-radius: 5px;
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
   color: #fff;
   padding: 10px 20px;
@@ -601,19 +609,19 @@ main {
 }
 @media (max-width: 48em) {
   .welcome_btn {
-    font-size: 2.3rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 36em) {
   .welcome_btn {
     width: 119px;
-    font-size: 2.3rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 30em) {
   .welcome_btn {
     width: 120px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 0.8rem 1.9rem;
   }
 }
@@ -649,6 +657,13 @@ main {
   -webkit-box-shadow: 0 8.5px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 8.5px 5px 0 rgba(0, 0, 0, 0.2);
 }
+
+/* @media screen and (max-width: 1340px) {
+  .welcome_content {
+    padding: 3rem 0 0 15rem;
+    top: 0;
+  }
+} */
 .focus {
   background: #252737;
   height: 80vh;
@@ -700,24 +715,24 @@ main {
   }
 }
 .focus_heading {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 0;
   padding-bottom: 1rem;
   color: red;
 }
 .focus_description {
-  font-size: 1.9rem;
+  font-size: 1.4rem;
   font-weight: 300;
   color: #fff;
 }
 @media (max-width: 30em) {
   .focus_description {
-    font-size: 2.3rem;
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 43.75em) {
   .focus_description {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
   }
 }
 .focus_list {
@@ -810,28 +825,28 @@ main {
 }
 .focus_hexagon i {
   position: relative;
-  top: -6.3rem;
-  right: 0.6rem;
+  top: -4rem;
+  right: 0.4rem;
   z-index: 1000;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 @media (max-width: 62em) {
   .focus_hexagon i {
-    top: -7rem;
+    top: -4rem;
     right: 0.15rem;
   }
 }
 @media (max-width: 48em) {
   .focus_hexagon i {
-    font-size: 6rem;
+    font-size: 4rem;
     top: -8rem;
   }
 }
 @media (max-width: 43.75em) {
   .focus_hexagon i {
-    font-size: 6rem;
-    top: -9rem;
-    right: 0.15rem;
+    font-size: 3rem;
+    top: -4rem;
+    right: 0.3rem;
   }
 }
 @media (max-width: 43.75em) {
@@ -854,7 +869,7 @@ main {
 }
 .focus_hexagon:after {
   position: relative;
-  top: -12.2rem;
+  top: -8rem;
   -webkit-transform: rotate(-60deg);
   transform: rotate(-60deg);
 }
@@ -865,7 +880,7 @@ main {
 }
 @media (max-width: 62em) {
   .focus_hexagon:after {
-    top: -14.21rem;
+    top: -7.9rem;
   }
 }
 @media (max-width: 48em) {
@@ -875,7 +890,7 @@ main {
 }
 @media (max-width: 43.75em) {
   .focus_hexagon:after {
-    top: -18.12rem;
+    top: -7.9rem;
   }
 }
 .focus_icon {
@@ -936,17 +951,17 @@ main {
 }
 @media (max-width: 43.75em) {
   .focus_listHeading {
-    font-size: 2.9rem;
+    font-size: 2.3rem;
   }
 }
 .focus_listDescription {
-  font-size: 1.9rem;
+  font-size: 1.1rem;
   font-weight: 300;
   color: #fff;
 }
 @media (max-width: 43.75em) {
   .focus_listDescription {
-    font-size: 2.1rem;
+    font-size: 1.1rem;
   }
 }
 .about {
@@ -970,11 +985,11 @@ main {
   }
 }
 .about_title {
-  font-size: 7.8rem;
+  font-size: 4rem;
   margin-bottom: 0.25em;
 }
 .about_subtitle {
-  font-size: 4.5rem;
+  font-size: 1rem;
   margin: 0.5em 0;
 }
 @supports (display: grid) {
@@ -1011,14 +1026,14 @@ main {
   }
   .about_subtitle p,
   .about_text p {
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     font-weight: 100;
     color: #656565;
   }
   @media (max-width: 36em) {
     .about_subtitle p,
     .about_text p {
-      font-size: 2.6rem;
+      font-size: 1.1rem;
     }
   }
   .about_subtitle p:nth-of-type(n),
@@ -1038,7 +1053,7 @@ main {
   padding: 5em 0;
 }
 .portfolio h1 {
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 .portfolio_items {
   display: -webkit-box;
@@ -1087,17 +1102,17 @@ main {
 }
 .portfolio_title {
   color: #fff;
-  font-size: 2.8rem;
+  font-size: 1.6rem;
   margin-bottom: auto;
 }
 .portfolio_desc {
   display: none;
-  font-size: 1.8rem;
+  font-size: 0.9rem;
 }
 .portfolio_link {
   color: #fff;
   font-weight: 900;
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   text-decoration: none;
   border-bottom: 3px solid #fff;
   -ms-flex-item-align: start;
@@ -1126,11 +1141,11 @@ main {
 @media (max-width: 62em) {
   .portfolio_function {
     float: none;
-    width: 50%;
+    width: 100%;
   }
 }
 .portfolio_functionHeading {
-  font-size: 2.4rem;
+  font-size: 2rem;
   letter-spacing: 0.15em;
   color: red;
   text-transform: uppercase;
@@ -1139,6 +1154,16 @@ main {
   font-weight: 400;
   text-align: left;
 }
+
+@media (max-width: 36em) {
+  .portfolio_function {
+    width: 100%;
+  }
+  .portfolio_functionHeading {
+    font-size: 1.4rem;
+  }
+}
+
 .portfolio_functionList {
   display: grid;
   grid-column-gap: 7px;
@@ -1167,16 +1192,32 @@ main {
   color: #fff;
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
+  margin-bottom: 2rem;
 }
 .portfolio_btnSite:hover {
   cursor: pointer;
   background: #00a9a9;
 }
 .portfolio_siteLink {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   color: #fff;
   text-decoration: none;
 }
+
+@media (max-width: 62em) {
+  .portfolio_btnSite {
+    padding: 1rem 1.2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 36em) {
+  .portfolio_btnSite {
+    padding: 1rem 1.2rem;
+    margin-bottom: 2rem;
+  }
+}
+
 .portfolio_iMacContainer {
   position: relative;
   top: 0;
@@ -1226,10 +1267,22 @@ main {
   background: url(../img/iMac.png) 50% no-repeat;
   background-size: contain;
 }
+
+@media (min-width: 1500px) {
+  .portfolio .desktop-wrapper {
+    height: 510px;
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+    background: url(../img/iMac.png) 50% no-repeat;
+    background-size: contain;
+  }
+}
+
 @media (max-width: 62em) {
   .portfolio .desktop-wrapper {
-    height: 610px;
-    width: 800px;
+    height: 500px;
+    width: 670px;
   }
 }
 @media (max-width: 48em) {
@@ -1251,11 +1304,11 @@ main {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 62em) {
+/* @media (max-width: 62em) {
   .portfolio .modal_video {
     padding: 17.4% 3.5% 35.6%;
   }
-}
+} */
 @media (max-width: 48em) {
   .portfolio .modal_video {
     width: 0;
@@ -1263,6 +1316,19 @@ main {
     visibility: hidden;
   }
 }
+
+.modal_image {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+@media (min-width: 1400px) {
+  .modal_image {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
 .portfolio_iMacVid {
   width: 773px;
   height: 100%;
@@ -1270,7 +1336,7 @@ main {
   top: 34.2rem;
 }
 .portfolio_functionItem {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 @supports (display: grid) {
@@ -1288,7 +1354,7 @@ main {
     grid-row: 1 / span 2;
   }
   .featured .portfolio_title {
-    font-size: 5rem;
+    font-size: 1.7rem;
   }
   .featured .portfolio_desc {
     display: block;
@@ -1317,14 +1383,21 @@ main {
   left: 9em;
   top: 1em;
   border: 0;
-  width: 6em;
-  height: 6em;
+  width: 4em;
+  height: 4em;
   padding: 4px 0 0;
   border-radius: 50%;
   cursor: pointer;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 2000;
 }
+
+.modal_close svg {
+  position: relative;
+  left: 15px;
+}
+
 @media (max-width: 36em) {
   .modal_close {
     top: 2em;
@@ -1379,7 +1452,7 @@ main {
   width: 70%;
 }
 .portfolio_title-box .portfolio_title {
-  font-size: 3.5rem;
+  font-size: 1.8rem;
   display: inline-block;
 }
 .portfolio_title-box .portfolio_title:after {
@@ -1391,7 +1464,7 @@ main {
   width: 100%;
 }
 .portfolio_subtitle {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 .portfolio_content {
   width: 85%;
@@ -1401,14 +1474,18 @@ main {
 }
 .portfolio_content p,
 ul {
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   padding: 2rem 0;
   text-align: left;
+}
+
+.portfolio_github {
+  padding: 0 0 1rem 0;
 }
 @media (max-width: 36em) {
   .portfolio_content p,
   ul {
-    font-size: 2.5rem;
+    font-size: 1rem;
   }
 }
 .portfolio_full-width {
@@ -1428,11 +1505,13 @@ ul {
     float: none;
     width: 100%;
     height: auto;
+    margin: 0;
   }
 }
 @media (max-width: 36em) {
   .portfolio_full-width {
     height: auto;
+    margin: 0;
   }
 }
 .portfolio_firstPassage {
@@ -1448,7 +1527,7 @@ ul {
 .portfolio-modal-description {
   width: 52%;
   float: right;
-  font-size: 1.8rem;
+  font-size: 1.1rem;
 }
 .portfolio-modal-description a {
   color: red;
@@ -1459,7 +1538,7 @@ ul {
 }
 
 .portfolio-modal-github-board h4 {
-  font-size: 3.5rem;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 1500px) {
@@ -1467,7 +1546,7 @@ ul {
     width: 72%;
     margin: 0 auto;
     float: none;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -1478,7 +1557,7 @@ ul {
   }
 
   .portfolio-modal-github-board h4 {
-    font-size: 3.2rem;
+    font-size: 1.8rem;
   }
 }
 .portfolio-modal-image {
@@ -1586,7 +1665,7 @@ ul {
   text-align: center;
 }
 .social_heading {
-  font-size: 2.3rem;
+  font-size: 1.4rem;
   color: #fff;
 }
 .social_icons {
@@ -1613,7 +1692,7 @@ ul {
 }
 .copyright {
   color: red;
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 .copyright:before {
   content: '';

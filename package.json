@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "pretty:write": "npx prettier . --write"
+    "pretty:write": "npx prettier . --write",
+    "tailwind": "npx tailwindcss -i ./css/main.css -o ./css/output.css --watch"
   },
   "devDependencies": {
     "prettier": "3.2.4",

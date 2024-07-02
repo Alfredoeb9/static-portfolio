@@ -6,8 +6,183 @@
     <link href="../css/output.css" rel="stylesheet" />
 
     <title>My Writes</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GFHS2XP3G3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-GFHS2XP3G3')
+    </script>
   </head>
   <body>
-    <h1 class="text-yellow-500 text-3xl font-bold underline">Hello world!</h1>
+    <header class="navigation" data-toggle="closed">
+      <div class="navigation_sideContainer">
+        <div class="navigation_sideBar">
+          <!-- <p class="navigation_home">Alfredo E.B.</p> -->
+        </div>
+
+        <!-- <input type="checkbox" class="navigation_checkbox" id="navi-toggle" /> -->
+
+        <button class="navigation_button">
+          <!-- <label class="navigation_button" for="navi-toggle"> -->
+          <span class="navigation_icon">&nbsp;</span>
+          <!-- </label> -->
+        </button>
+
+        <div class="navigation_background">&nbsp;</div>
+
+        <nav class="navigation_navigation">
+          <ul class="navigation_container">
+            <li class="navigation_list">
+              <a
+                class="navigation_link"
+                href="../index.html#about-me"
+                hreflang="en"
+                type="text/html"
+                title="Home"
+                >My Story</a
+              >
+            </li>
+            <!-- <li class="navigation_list"><a class="navigation_link" href="#">About</a></li> -->
+            <li class="navigation_list">
+              <a
+                class="navigation_link"
+                href="../index.html#portfolio"
+                hreflang="en"
+                type="text/html"
+                title="Portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation_list">
+              <a
+                class="navigation_link"
+                href="./pages/myWrites.html"
+                hreflang="en"
+                type="text/html"
+                title="blog"
+                >My Writes</a
+              >
+            </li>
+            <!-- <li class="navigation_list">
+              <a
+                class="navigation_link disabled"
+                href="contact.php"
+                hreflang="en"
+                type="text/html"
+                title="Contact"
+                >Contact</a
+              >
+            </li> -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="min-w-full max-w-full">
+      <section class="hero w-full h-[65vh]">
+        <div class="hero_container flex justify-center items-center h-[50vh]">
+          <div class="hero_content px-3">
+            <h1 class="text-4xl md:text:4xl">My Technical Writes</h1>
+            <p class="text-2xl">
+              Welcome to my rants, hope you leave learning something
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="recent_blog">
+        <div
+          class="recent_blog_container h-[70vh] flex justify-center items-center"
+        >
+          <div
+            class="recent_blog_content block md:flex md:justify-center md:items-center"
+          >
+            <div class="recent_blog_img md:mr-8">
+              <img
+                src="../img/bStadiumThumbNail-opt.jpg"
+                alt="bstadium image"
+                class="max-w-80 md:max-w-96"
+              />
+            </div>
+
+            <div class="recent_blog_content_data mt-2">
+              <div
+                class="recent_blog_content_metaData flex justify-between text-white"
+              >
+                <p class="bg-gray-400 px-1 py-1 rounded-lg">Date</p>
+                <p class="bg-gray-400 px-1 py-1 rounded-lg">4 Minute Read</p>
+              </div>
+
+              <div class="mt-2">
+                <h3 class="text-xl">Article Title</h3>
+                <p class="text-lg">** Article Description **</p>
+                <button
+                  class="text-md bg-cyan-600 text-white px-3 py-2 rounded-lg mt-2"
+                >
+                  Read This Blog
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blogs">
+        <div class="blogs_container">
+          <h2 class="blogs_title">All Blogs</h2>
+
+          <div class="blog_grid">
+            <div class="blog_grid_1">
+              <img src="../img/a1-ecommerce.png" />
+
+              <h4>Article Title</h4>
+
+              <div class="blog_grid_content_metaData">
+                <p>Date</p>
+                <p>4 Minute Read</p>
+              </div>
+
+              <span class="line_break"></span>
+
+              <button class="blog_grid_button" type="button">
+                Read This Blog
+              </button>
+            </div>
+
+            <div class="blog_grid_1">
+              <img src="../img/a1-ecommerce.png" />
+
+              <h4>Article Title</h4>
+
+              <div class="blog_grid_content_metaData">
+                <p>Date</p>
+                <p>4 Minute Read</p>
+              </div>
+
+              <span class="line_break"></span>
+
+              <button class="blog_grid_button" type="button">
+                Read This Blog
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--  build:js  -->
+    <script src="../js/main.js"></script>
+    <script src="../js/smoothScrolling.js"></script>
+
+    <!--  endbuild-->
   </body>
 </html>
