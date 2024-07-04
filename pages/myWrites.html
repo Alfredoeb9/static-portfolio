@@ -86,7 +86,9 @@
     </header>
 
     <main class="min-w-full max-w-full">
-      <section class="hero w-full h-[65vh]">
+      <section
+        class="hero w-full h-[65vh] bg-gradient-to-r from-[#f1f1f1] via-[#d18d66ac] to-[#E1DDDB]"
+      >
         <div class="hero_container flex justify-center items-center h-[50vh]">
           <div class="hero_content px-3">
             <h1 class="text-4xl md:text:4xl">My Technical Writes</h1>
@@ -97,24 +99,26 @@
         </div>
       </section>
 
-      <section class="recent_blog">
+      <section class="recent_blog px-2">
         <div
           class="recent_blog_container h-[70vh] flex justify-center items-center"
         >
           <div
-            class="recent_blog_content block md:flex md:justify-center md:items-center"
+            class="recent_blog_content block md:flex md:justify-center md:items-center md:flex-1"
           >
-            <div class="recent_blog_img md:mr-8">
+            <div
+              class="recent_blog_img md:mr-8 max-w-[500px] m-auto sm:m-0 w-full"
+            >
               <img
                 src="../img/bStadiumThumbNail-opt.jpg"
                 alt="bstadium image"
-                class="max-w-80 md:max-w-96"
+                class="max-w-inherit w-full"
               />
             </div>
 
-            <div class="recent_blog_content_data mt-2">
+            <div class="recent_blog_content_data mt-2 w-full md:w-[200px]">
               <div
-                class="recent_blog_content_metaData flex justify-between text-white"
+                class="recent_blog_content_metaData flex justify-between items-center text-white gap-3"
               >
                 <p class="bg-gray-400 px-1 py-1 rounded-lg">Date</p>
                 <p class="bg-gray-400 px-1 py-1 rounded-lg">4 Minute Read</p>
@@ -134,24 +138,35 @@
         </div>
       </section>
 
-      <section class="blogs">
+      <section class="blogs container m-auto">
         <div class="blogs_container">
           <h2 class="blogs_title">All Blogs</h2>
 
-          <div class="blog_grid">
+          <div
+            class="blog_grid block md:grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5 p-5"
+          >
             <div class="blog_grid_1">
               <img src="../img/a1-ecommerce.png" />
 
-              <h4>Article Title</h4>
+              <h4 class="font-semibold">Article Title</h4>
 
-              <div class="blog_grid_content_metaData">
-                <p>Date</p>
-                <p>4 Minute Read</p>
+              <div
+                class="blog_grid_content_metaData flex justify-between items-center p-1"
+              >
+                <p class="text-white bg-slate-500 rounded-lg p-1">Date</p>
+                <p class="text-white bg-slate-500 rounded-lg p-1">
+                  4 Minute Read
+                </p>
               </div>
 
-              <span class="line_break"></span>
+              <span
+                class="line_break block h-[10px] md:h border-black border-b-4 border-b-2"
+              ></span>
 
-              <button class="blog_grid_button" type="button">
+              <button
+                class="blog_grid_button bg-cyan-400 text-white p-2 mt-2 rounded-md hover:scale-105 transition-all"
+                type="button"
+              >
                 Read This Blog
               </button>
             </div>
@@ -159,16 +174,51 @@
             <div class="blog_grid_1">
               <img src="../img/a1-ecommerce.png" />
 
-              <h4>Article Title</h4>
+              <h4 class="font-semibold">Article Title</h4>
 
-              <div class="blog_grid_content_metaData">
-                <p>Date</p>
-                <p>4 Minute Read</p>
+              <div
+                class="blog_grid_content_metaData flex justify-between items-center p-1"
+              >
+                <p class="text-white bg-slate-500 rounded-lg p-1">Date</p>
+                <p class="text-white bg-slate-500 rounded-lg p-1">
+                  4 Minute Read
+                </p>
               </div>
 
-              <span class="line_break"></span>
+              <span
+                class="line_break block h-[10px] md:h border-black border-b-2"
+              ></span>
 
-              <button class="blog_grid_button" type="button">
+              <button
+                class="blog_grid_button bg-cyan-400 text-white p-2 mt-2 rounded-md hover:scale-105 transition-all"
+                type="button"
+              >
+                Read This Blog
+              </button>
+            </div>
+
+            <div class="blog_grid_1">
+              <img src="../img/a1-ecommerce.png" />
+
+              <h4 class="font-semibold">Article Title</h4>
+
+              <div
+                class="blog_grid_content_metaData flex justify-between items-center p-1"
+              >
+                <p class="text-white bg-slate-500 rounded-lg p-1">Date</p>
+                <p class="text-white bg-slate-500 rounded-lg p-1">
+                  4 Minute Read
+                </p>
+              </div>
+
+              <span
+                class="line_break block h-[10px] md:h border-black border-b-2"
+              ></span>
+
+              <button
+                class="blog_grid_button bg-cyan-400 text-white p-2 mt-2 rounded-md hover:scale-105 transition-all"
+                type="button"
+              >
                 Read This Blog
               </button>
             </div>
