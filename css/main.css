@@ -457,7 +457,7 @@ main {
 
 @media screen and (max-width: 1360px) and (max-height: 660px) {
   .welcome_content {
-    padding: 0rem 0 0 1rem;
+    padding: 0rem 0 0 3rem;
     top: 0;
   }
 }
@@ -679,6 +679,7 @@ main {
   width: 100%;
   padding: 0 2rem 0 5rem;
 }
+
 @media (max-width: 62em) {
   .focus_container {
     padding: 0;
@@ -694,6 +695,16 @@ main {
   position: relative;
   top: 4rem;
   width: 43%;
+}
+
+@media screen and (max-width: 1360px) and (max-height: 660px) {
+  .focus_container {
+    padding: 0 1.8rem;
+  }
+  .focus_headingWrapper {
+    padding: 0 0 0 1.2rem;
+    top: 1rem;
+  }
 }
 @media (max-width: 75em) {
   .focus_headingWrapper {

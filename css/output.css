@@ -850,12 +850,12 @@ video {
   height: 50vh;
 }
 
-.h-\[70vh\] {
-  height: 70vh;
-}
-
 .h-\[65vh\] {
   height: 65vh;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
 }
 
 .w-1 {
@@ -886,16 +886,12 @@ video {
   max-width: 2.5rem;
 }
 
-.max-w-full {
-  max-width: 100%;
-}
-
 .max-w-80 {
   max-width: 20rem;
 }
 
-.max-w-72 {
-  max-width: 18rem;
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-shrink {
@@ -1869,9 +1865,9 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-slate-500 {
+.bg-cyan-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+  background-color: rgb(8 145 178 / var(--tw-bg-opacity));
 }
 
 .bg-gray-400 {
@@ -1879,9 +1875,9 @@ video {
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
-.bg-cyan-600 {
+.bg-slate-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(8 145 178 / var(--tw-bg-opacity));
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -1998,14 +1994,14 @@ video {
   padding: 0.25rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .py-1 {
@@ -2074,6 +2070,11 @@ video {
   vertical-align: super;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -2082,16 +2083,6 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-xl {
@@ -3041,7 +3032,7 @@ main {
 
 @media screen and (max-width: 1360px) and (max-height: 660px) {
   .welcome_content {
-    padding: 0rem 0 0 1rem;
+    padding: 0rem 0 0 3rem;
     top: 0;
   }
 }
@@ -3277,6 +3268,17 @@ main {
   position: relative;
   top: 4rem;
   width: 43%;
+}
+
+@media screen and (max-width: 1360px) and (max-height: 660px) {
+  .focus_container {
+    padding: 0 1.8rem;
+  }
+
+  .focus_headingWrapper {
+    padding: 0 0 0 1.2rem;
+    top: 1rem;
+  }
 }
 
 @media (max-width: 75em) {
@@ -4608,24 +4610,16 @@ template {
 }
 
 @media (min-width: 768px) {
-  .md\:mt-4 {
-    margin-top: 1rem;
-  }
-
-  .md\:mr-4 {
-    margin-right: 1rem;
-  }
-
   .md\:mr-8 {
     margin-right: 2rem;
   }
 
-  .md\:flex {
-    display: flex;
+  .md\:mt-4 {
+    margin-top: 1rem;
   }
 
-  .md\:h-\[70vh\] {
-    height: 70vh;
+  .md\:flex {
+    display: flex;
   }
 
   .md\:max-w-96 {
