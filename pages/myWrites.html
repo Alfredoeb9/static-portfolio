@@ -85,8 +85,10 @@
       </div>
     </header>
 
-    <main class="min-w-full max-w-full">
-      <section class="hero w-full h-[65vh]">
+    <main class="min-w-full max-w-full px-2 md:px-0">
+      <section
+        class="hero w-full h-[65vh] bg-gradient-to-r from-[#f1f1f1] via-[#d18d66ac] to-[#E1DDDB]"
+      >
         <div class="hero_container flex justify-center items-center h-[50vh]">
           <div class="hero_content px-3">
             <h1 class="text-4xl md:text:4xl">My Technical Writes</h1>
@@ -97,24 +99,24 @@
         </div>
       </section>
 
-      <section class="recent_blog">
+      <section class="recent_blog px-2">
         <div
           class="recent_blog_container h-[70vh] flex justify-center items-center"
         >
           <div
-            class="recent_blog_content block md:flex md:justify-center md:items-center"
+            class="recent_blog_content block md:flex md:justify-center md:items-center md:flex-1"
           >
-            <div class="recent_blog_img md:mr-8">
+            <div class="recent_blog_img md:mr-8 max-w-[500px] m-auto w-full">
               <img
                 src="../img/bStadiumThumbNail-opt.jpg"
                 alt="bstadium image"
-                class="max-w-80 md:max-w-96"
+                class="max-w-inherit w-full"
               />
             </div>
 
-            <div class="recent_blog_content_data mt-2">
+            <div class="recent_blog_content_data mt-2 w-full md:w-[200px]">
               <div
-                class="recent_blog_content_metaData flex justify-between text-white"
+                class="recent_blog_content_metaData flex justify-between items-center text-white gap-3"
               >
                 <p class="bg-gray-400 px-1 py-1 rounded-lg">Date</p>
                 <p class="bg-gray-400 px-1 py-1 rounded-lg">4 Minute Read</p>
