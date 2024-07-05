@@ -870,6 +870,10 @@ video {
   height: 90vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-1 {
   width: 0.25rem;
 }
