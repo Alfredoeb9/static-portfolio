@@ -866,8 +866,8 @@ video {
   height: 65vh;
 }
 
-.h-\[70vh\] {
-  height: 70vh;
+.h-\[90vh\] {
+  height: 90vh;
 }
 
 .w-1 {
@@ -4714,10 +4714,6 @@ template {
 
   .md\:grid {
     display: grid;
-  }
-
-  .md\:w-\[200px\] {
-    width: 200px;
   }
 
   .md\:w-\[315px\] {
