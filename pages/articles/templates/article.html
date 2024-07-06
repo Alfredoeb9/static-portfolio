@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interfaces vs. Types for TypeScript</title>
+
+    <link href="../../css/output.css" rel="stylesheet" />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GFHS2XP3G3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-GFHS2XP3G3')
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-N7JQSCV')
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <header class="navigation" data-toggle="closed">
+      <div class="navigation_sideContainer">
+        <div class="navigation_sideBar">
+          <!-- <p class="navigation_home">Alfredo E.B.</p> -->
+        </div>
+
+        <!-- <input type="checkbox" class="navigation_checkbox" id="navi-toggle" /> -->
+
+        <button class="navigation_button">
+          <!-- <label class="navigation_button" for="navi-toggle"> -->
+          <span class="navigation_icon">&nbsp;</span>
+          <!-- </label> -->
+        </button>
+
+        <div class="navigation_background">&nbsp;</div>
+
+        <nav class="navigation_navigation">
+          <ul class="navigation_container">
+            <li class="navigation_list">
+              <a
+                class="navigation_link"
+                href="../../index.html#about-me"
+                hreflang="en"
+                type="text/html"
+                title="Home"
+                >My Story</a
+              >
+            </li>
+            <!-- <li class="navigation_list"><a class="navigation_link" href="#">About</a></li> -->
+            <li class="navigation_list">
+              <a
+                class="navigation_link"
+                href="../../index.html#portfolio"
+                hreflang="en"
+                type="text/html"
+                title="Portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation_list">
+              <a
+                class="navigation_link"
+                href="../../pages/myWrites.html"
+                hreflang="en"
+                type="text/html"
+                title="blog"
+                >My Writes</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="w-full h-full container m-auto">
+      <section class="article flex justify-center items-center mt-6">
+        <div
+          class="article_container w-full h-full flex justify-center flex-col items-center max-w-[980px] px-7 md:px-0"
+        >
+          <div class="article_tags flex justify-between w-[170px]">
+            <div
+              class="article_tag1 bg-slate-400 rounded-lg py-2 px-3 text-white"
+            >
+              Tag1
+            </div>
+            <div
+              class="article_tag2 bg-slate-400 rounded-lg py-2 px-3 text-white"
+            >
+              Tag2
+            </div>
+          </div>
+
+          <h1>ARTICLE TITLE</h1>
+          <p>ARTICLE DESCRIPTION</p>
+
+          <div class="article_image_container mb-5">
+            <img
+              class="article_image p-5 md:p-0"
+              src="../../img/bStadiumThumbNail-opt.jpg"
+            />
+          </div>
+
+          <article>
+            <h2 class="mb-2">Article Title Shorten</h2>
+            <div class="article mb-2">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                accumsan, ligula sed mattis pretium, orci lacus varius diam,
+                gravida pretium erat tellus sit amet tellus. Nulla ut neque
+                bibendum, convallis lorem faucibus, convallis nibh. Nulla
+                viverra mi justo, ac dictum ipsum sagittis in. Donec id magna
+                placerat, hendrerit nisi in, auctor risus. Nulla vitae interdum
+                dolor. Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas. Donec tempus nec lorem ut
+                pellentesque. Nullam sed mi luctus, euismod nunc ut, ultrices
+                felis.
+              </p>
+            </div>
+
+            <div class="article mb-2">
+              <h3 class="font-semibold mb-1">Article Title Shorten</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                accumsan, ligula sed mattis pretium, orci lacus varius diam,
+                gravida pretium erat tellus sit amet tellus. Nulla ut neque
+                bibendum, convallis lorem faucibus, convallis nibh. Nulla
+                viverra mi justo, ac dictum ipsum sagittis in. Donec id magna
+                placerat, hendrerit nisi in, auctor risus. Nulla vitae interdum
+                dolor. Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas. Donec tempus nec lorem ut
+                pellentesque. Nullam sed mi luctus, euismod nunc ut, ultrices
+                felis.
+              </p>
+            </div>
+
+            <div class="article mb-2">
+              <h3 class="font-semibold mb-1">Article Title Shorten</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                accumsan, ligula sed mattis pretium, orci lacus varius diam,
+                gravida pretium erat tellus sit amet tellus. Nulla ut neque
+                bibendum, convallis lorem faucibus, convallis nibh. Nulla
+                viverra mi justo, ac dictum ipsum sagittis in. Donec id magna
+                placerat, hendrerit nisi in, auctor risus. Nulla vitae interdum
+                dolor. Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas. Donec tempus nec lorem ut
+                pellentesque. Nullam sed mi luctus, euismod nunc ut, ultrices
+                felis.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="social mt-6">
+      <h3 class="social_heading">Follow me on social media</h3>
+      <div class="social_icons">
+        <!-- <img class="social_icon" src="img/twitter.svg" alt="twitter"> -->
+        <a class="social_icon" href="https://www.linkedin.com/in/alfbar/">
+          <img src="../../img/linkedin.svg" alt="www.linkedin.com" />
+        </a>
+        <a
+          class="social_icon"
+          href="https://github.com/Alfredoeb9"
+          target="_blank"
+        >
+          <img src="../../img/github.svg" alt="www.github.com" />
+        </a>
+      </div>
+
+      <p class="copyright">Copyright &copy; 2019 Alfredo Barillas</p>
+    </footer>
+
+    <!--  build:js  -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/smoothScrolling.js"></script>
+
+    <!--  endbuild-->
+  </body>
+</html>
