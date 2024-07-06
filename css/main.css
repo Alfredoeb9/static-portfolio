@@ -849,8 +849,8 @@ main {
 }
 @media (max-width: 48em) {
   .focus_hexagon i {
-    font-size: 4rem;
-    top: -8rem;
+    font-size: 3rem;
+    top: -4rem;
   }
 }
 @media (max-width: 43.75em) {
@@ -880,29 +880,29 @@ main {
 }
 .focus_hexagon:after {
   position: relative;
-  top: -8rem;
+  top: -7.9rem;
   -webkit-transform: rotate(-60deg);
   transform: rotate(-60deg);
 }
 @media (max-width: 75em) {
-  .focus_hexagon:after {
-    top: -13.5rem;
-  }
+  /* .focus_hexagon:after {
+    top: -7.88rem;
+  } */
 }
 @media (max-width: 62em) {
-  .focus_hexagon:after {
+  /* .focus_hexagon:after {
     top: -7.9rem;
-  }
+  } */
 }
 @media (max-width: 48em) {
-  .focus_hexagon:after {
-    top: -17.52rem;
-  }
+  /* .focus_hexagon:after {
+    top: -7.9rem;
+  } */
 }
 @media (max-width: 43.75em) {
-  .focus_hexagon:after {
+  /* .focus_hexagon:after {
     top: -7.9rem;
-  }
+  } */
 }
 .focus_icon {
   width: 60px;
