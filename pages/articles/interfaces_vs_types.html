@@ -99,17 +99,20 @@
             <div
               class="article_tag1 bg-slate-400 rounded-lg py-2 px-3 text-white"
             >
-              Tag1
+              JavaScript
             </div>
             <div
               class="article_tag2 bg-slate-400 rounded-lg py-2 px-3 text-white"
             >
-              Tag2
+              TypeScript
             </div>
           </div>
 
-          <h1>ARTICLE TITLE</h1>
-          <p>ARTICLE DESCRIPTION</p>
+          <h1>Interfaces vs Types in TypeScript</h1>
+          <p>
+            In this article I will be comparing Interfaces against Types, which
+            are the two options for defining types
+          </p>
 
           <div class="article_image_container mb-5">
             <img
@@ -118,52 +121,118 @@
             />
           </div>
 
-          <article>
-            <h2 class="mb-2">Article Title Shorten</h2>
+          <article class="w-full container">
+            <h2 class="mb-2">Interfaces vs Types</h2>
             <div class="article mb-2">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                accumsan, ligula sed mattis pretium, orci lacus varius diam,
-                gravida pretium erat tellus sit amet tellus. Nulla ut neque
-                bibendum, convallis lorem faucibus, convallis nibh. Nulla
-                viverra mi justo, ac dictum ipsum sagittis in. Donec id magna
-                placerat, hendrerit nisi in, auctor risus. Nulla vitae interdum
-                dolor. Pellentesque habitant morbi tristique senectus et netus
-                et malesuada fames ac turpis egestas. Donec tempus nec lorem ut
-                pellentesque. Nullam sed mi luctus, euismod nunc ut, ultrices
-                felis.
+                In TypeScript, a key idea is that checking types is all about
+                how things look. This is also known as “duck typing” or
+                “structural subtyping”. In TypeScript, there are two options for
+                define types which are Types and Interfaces are used to make
+                these types. They’re a strong tool for setting rules in your
+                code and agreeing on rules with code outside of your project,
+                thereby reducing errors and improving readability.
               </p>
             </div>
 
             <div class="article mb-2">
-              <h3 class="font-semibold mb-1">Article Title Shorten</h3>
+              <h3 class="font-semibold mb-1">What is a Interface?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                accumsan, ligula sed mattis pretium, orci lacus varius diam,
-                gravida pretium erat tellus sit amet tellus. Nulla ut neque
-                bibendum, convallis lorem faucibus, convallis nibh. Nulla
-                viverra mi justo, ac dictum ipsum sagittis in. Donec id magna
-                placerat, hendrerit nisi in, auctor risus. Nulla vitae interdum
-                dolor. Pellentesque habitant morbi tristique senectus et netus
-                et malesuada fames ac turpis egestas. Donec tempus nec lorem ut
-                pellentesque. Nullam sed mi luctus, euismod nunc ut, ultrices
-                felis.
+                Interfaces are used to describe the shape of objects, and can be
+                extended by other interfaces. Interfaces are mainly used to
+                define class structures but can also be used with functions.
+
+                <pre class="bg-[#f8f9fb] px-5 py-4 text-wrap">
+                  <span>
+                    // Define an object interface 
+                    <span class="text-[#aa0d91]">interface</span> <span class="text-[#1c00cf]">User</span> { 
+                      name: <span class="text-[#5c2699]">string</span>;
+                      age: <span class="text-[#5c2699]">number</span>; 
+                    } 
+                    
+                    // Interface inheritance 
+                    <span class="text-[#aa0d91]">interface</span> <span class="text-[#1c00cf]">Admin</span> extends <span class="text-[#1c00cf]">User</span> { 
+                      admin: <span class="text-[#5c2699]">boolean</span>; 
+                    } 
+                    
+                    // Interface in a function
+                    function greet(person: User) { 
+                      return “Hello “ + person.name 
+                    }
+  
+                    <span>// Ensure class conforms to an interface via implements class</span>
+                    <span class="text-[#1c00cf]">Greet</span> <span class="text-[#aa0d91]">implements</span> <span class="text-[#1c00cf]">User</span> { 
+                      name: <span class="text-[#5c2699]">string</span>; 
+                      age:  <span class="text-[#5c2699]">number</span>;
+                      
+                      constructor(name: string, age: number) {
+                          this.name = name; 
+                          this.age = age; 
+                      } 
+                    }
+                  </span>
+                  
+                </pre>
               </p>
             </div>
 
             <div class="article mb-2">
-              <h3 class="font-semibold mb-1">Article Title Shorten</h3>
+              <h3 class="font-semibold mb-1">What is a Types?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                accumsan, ligula sed mattis pretium, orci lacus varius diam,
-                gravida pretium erat tellus sit amet tellus. Nulla ut neque
-                bibendum, convallis lorem faucibus, convallis nibh. Nulla
-                viverra mi justo, ac dictum ipsum sagittis in. Donec id magna
-                placerat, hendrerit nisi in, auctor risus. Nulla vitae interdum
-                dolor. Pellentesque habitant morbi tristique senectus et netus
-                et malesuada fames ac turpis egestas. Donec tempus nec lorem ut
-                pellentesque. Nullam sed mi luctus, euismod nunc ut, ultrices
-                felis.
+                Full name is “type alias” and are used to define names to type literals. In which supports more rich type-system features then interfaces.
+
+                <pre class="bg-[#f8f9fb] px-5 py-4 text-wrap">
+                  <span>
+                    // Define a type 
+                    <span class="text-[#aa0d91]">type</span> <span class="text-[#1c00cf]">User</span> = { 
+                      name: <span class="text-[#5c2699]">string</span>;
+                      age: <span class="text-[#5c2699]">number</span>; 
+                    } 
+                    
+                    <span class="text-[#aa0d91]">type</span> <span class="text-[#1c00cf]">Person</span> = <span class="text-[#1c00cf]">User</span> & { 
+                      admin: <span class="text-[#5c2699]">boolean</span>; 
+                    } 
+                    
+                    // Types in a function
+                    function greet(person: User) { 
+                      return “Hello “ + person.name 
+                    }
+                  
+                </pre>
+              </p>
+            </div>
+
+            <div class="article mb-2">
+              <h3 class="font-semibold mb-1">Differences between interfaces and types</h3>
+              <h4>Primitive Types</h4>
+              <p>
+                Primitive types are inbuilt types in TypeScript. JavaScript has a total of seven primitives  those being string, number, boolean, null, undefined, bigint(less common), and symbol(less common).
+              </p>
+
+              <br />
+
+              <h4>Union Types</h4>
+              <p>
+                A Union Type is a type formed from two or more other types, representing values that may be any one of those types listed. Each types are referred to as union’s members.
+              
+                <pre class="bg-[#f8f9fb] px-5 py-4 text-wrap">
+                  <span>
+                    <span class="text-[#aa0d91]">type</span> <span class="text-[#1c00cf]">Transport </span> = “Car” | “Bus” | “Bike” | “Foot”
+                </pre>
+              </p>
+            </div>
+
+            <div class="article mb-2">
+              <h3 class="font-semibold mb-1">Types vs Interfaces</h3>
+              <p>
+                Some key points when thinking of using types over interfaces are:
+                <ul>
+                  <li>Interfaces are limited to only describing object shapes.</li>
+                  <li>Type cannot be re-opened to add new properties vs an interface which is always extendable.</li>
+                  <li>Interfaces can be extended by declaring it multiple times to other classes.</li>
+                  <li>If you are dealing with performance, in critical types interface comparison checks can be faster.</li>
+                </ul>
+
               </p>
             </div>
           </article>
