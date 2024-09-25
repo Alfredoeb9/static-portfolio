@@ -1037,14 +1037,16 @@ main {
   }
   .about_subtitle p,
   .about_text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: .5px;
     color: #656565;
   }
   @media (max-width: 36em) {
     .about_subtitle p,
     .about_text p {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
     }
   }
   .about_subtitle p:nth-of-type(n),
@@ -1864,7 +1866,7 @@ template {
 
 .carousel {
   position: relative;
-  height: 600px;
+  height: 100vh;
   width: 100%;
   margin: 0 auto;
 }
@@ -1891,11 +1893,11 @@ template {
 }
 
 .carousel_button--left {
-  left: 3px;
+  left: 18px;
 }
 
 .carousel_button--right {
-  right: 3px;
+  right: 18px;
 }
 
 .carousel_track-container {
