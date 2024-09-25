@@ -330,752 +330,1525 @@
 
       <section class="portfolio" id="portfolio">
         <h1>My Personal Applications</h1>
-        <div class="portfolio_items">
-          <!-- First project -->
-          <figure class="portfolio_item">
-            <img
-              class="portfolio_image"
-              src="img/a1-fitness.png"
-              alt="a1 fitness logger app homepage with fitness equipment as a background"
-            />
-            <figcaption>
-              <h2 class="portfolio_title">A1 Fitness Logger</h2>
-              <!-- <p class="portfolio_desc"></p> -->
-              <a href="#" class="portfolio_link">More info</a>
-            </figcaption>
+        <div class="carousel">
 
-            <!-- Portfolio modal 1 -->
-            <div class="portfolio_modal">
-              <button class="modal_close" aria-label="Modal Close">
-                <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
-                  <g transform="translate(-15 -15)">
-                    <polygon
-                      class="st0"
-                      points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-                    35.8,16.5 37,17.7 	"
+          <button class="carousel_button carousel_button--left is-hidden">
+            <i><</i>
+          </button>
+
+          <div class="carousel_track-contaner">
+
+            <ul class="carousel_track">
+              <li class="carousel_slide current_slide">
+                <div class="portfolio_items ">
+            
+                  <!-- First project -->
+                  <figure class="portfolio_item">
+                    <img
+                      class="portfolio_image"
+                      src="img/a1-fitness.png"
+                      alt="a1 fitness logger app homepage with fitness equipment as a background"
                     />
-                  </g>
-                </svg>
-              </button>
-              <div class="portfolio_header header-zero">
-                <div class="portfolio_title-box">
-                  <h2 class="portfolio_title">A1 Fitness Logger</h2>
-                  <p class="portfolio_subtitle">
-                    A1 Fitness Logger is a full stack application that allows
-                    users to track their workout and track calories burned.
-                  </p>
-                </div>
-              </div>
-              <!-- / portfolio-header -->
-              <div class="portfolio_content">
-                <p>
-                  A1 Fitness Logger was motivated by my fitness journey,
-                  Knowingly there are other applications I could have
-                  downloaded, I wanted to create a fitness logger application of
-                  my own. The languages I used were React, Redux/
-                  Reduxjs/toolkit, Node.js, Express, Mongodb.
-                </p>
-
-                <!-- <img class="portfolio-full-width portfolio-modal-image" src="img/portfolio-kingChef-modal1-web.jpg" alt="King Chef front web page image of salmon dish topped with a thin slice of lemon.">  -->
-                <div class="portfolio_iMacContainer">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="desktop-wrapper">
-                        <video
-                          class="fillwidth modal_video"
-                          muted="true"
-                          loop="true"
-                          autoplay="true"
-                          preload="metadata"
-                          poster="img/a1-fitness.png"
-                          playsinline
+                    <figcaption>
+                      <h2 class="portfolio_title">A1 Fitness Logger</h2>
+                      <!-- <p class="portfolio_desc"></p> -->
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+        
+                    <!-- Portfolio modal 1 -->
+                    <div class="portfolio_modal">
+                      <button class="modal_close" aria-label="Modal Close">
+                        <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                          <g transform="translate(-15 -15)">
+                            <polygon
+                              class="st0"
+                              points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                            35.8,16.5 37,17.7 	"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                      <div class="portfolio_header header-zero">
+                        <div class="portfolio_title-box">
+                          <h2 class="portfolio_title">A1 Fitness Logger</h2>
+                          <p class="portfolio_subtitle">
+                            A1 Fitness Logger is a full stack application that allows
+                            users to track their workout and track calories burned.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- / portfolio-header -->
+                      <div class="portfolio_content">
+                        <p>
+                          A1 Fitness Logger was motivated by my fitness journey,
+                          Knowingly there are other applications I could have
+                          downloaded, I wanted to create a fitness logger application of
+                          my own. The languages I used were React, Redux/
+                          Reduxjs/toolkit, Node.js, Express, Mongodb.
+                        </p>
+        
+                        <!-- <img class="portfolio-full-width portfolio-modal-image" src="img/portfolio-kingChef-modal1-web.jpg" alt="King Chef front web page image of salmon dish topped with a thin slice of lemon.">  -->
+                        <div class="portfolio_iMacContainer">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="desktop-wrapper">
+                                <video
+                                  class="fillwidth modal_video"
+                                  muted="true"
+                                  loop="true"
+                                  autoplay="true"
+                                  preload="metadata"
+                                  poster="img/a1-fitness.png"
+                                  playsinline
+                                >
+                                  <!-- <source 
+                          src="video/Kingchef-Slideshow-phone.mp4" 
+                          type="video/mp4" />                        Load for mobile phones -->
+        
+                                  <source src="video/a1-fitness.mp4" type="video/mp4" />
+                                  <!--  Load for web that load mp4 files -->
+                                </video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <!-- <button class="fullScreenVid" id="butFullScreenVid">Make Video Full Screen</button> -->
+                        <!-- <div id="portfolio-modal-content"> -->
+                        <p class="portfolio-modal-description">
+                          Upon entering A1 Fitness, unauthorized users will only be
+                          allowed to view the homepage, login, and signup views. Once
+                          users create an account, they will be allowed to track their
+                          fitness journey and calories per workout.
+                        </p>
+                        <p class="portfolio-modal-description">
+                          The mission for this application was to learn the cycle of
+                          creating a MERN style application from development to
+                          production, as well as creating a application I would enjoy
+                          creating through the very end.
+                        </p>
+        
+                        <div
+                          class="portfolio-modal-github-board portfolio-modal-description"
                         >
-                          <!-- <source 
-                  src="video/Kingchef-Slideshow-phone.mp4" 
-                  type="video/mp4" />                        Load for mobile phones -->
-
-                          <source src="video/a1-fitness.mp4" type="video/mp4" />
-                          <!--  Load for web that load mp4 files -->
-                        </video>
+                          <h4>Want To Track my Tickets?</h4>
+                          <p>
+                            <b>Kanban Board:</b>
+                            <a
+                              href="https://github.com/users/Alfredoeb9/projects/4"
+                              target="_blank"
+                              class="buttonLink"
+                              onclick="window.open('https://github.com/users/Alfredoeb9/projects/4', '_blank')"
+                              >A1 Fitness Board</a
+                            >
+                          </p>
+        
+                          <p>
+                            <b>Github:</b>
+                            <a
+                              href="https://github.com/Alfredoeb9/Fitness-App-FrontEnd"
+                              target="_blank"
+                              class="buttonLink"
+                              onclick="window.open('https://github.com/Alfredoeb9/Fitness-App-FrontEnd', '_blank')"
+                              >A1 Fitness Github</a
+                            >
+                          </p>
+                        </div>
+        
+                        <div class="portfolio_function">
+                          <h2 class="portfolio_functionHeading">Tech Stack:</h2>
+                          <ul class="portfolio_functionList">
+                            <li class="portfolio_functionItem">HTML5</li>
+                            <li class="portfolio_functionItem">CSS3</li>
+                            <li class="portfolio_functionItem">React.js</li>
+                            <li class="portfolio_functionItem">Node.js</li>
+                            <li class="portfolio_functionItem">Express.js</li>
+                            <li class="portfolio_functionItem">Mongodb</li>
+                          </ul>
+                          <div class="portfolio_btn">
+                            <a
+                              class="portfolio_siteLink"
+                              href="https://fitness-app-front-end-eight.vercel.app/welcome"
+                              target="_blank"
+                              lang="en-us"
+                            >
+                              <button
+                                onclick="window.open('https://fitness-app-front-end-eight.vercel.app/welcome', '_blank')"
+                                class="portfolio_btnSite"
+                              >
+                                View The Website
+                              </button>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <!-- <button class="fullScreenVid" id="butFullScreenVid">Make Video Full Screen</button> -->
-                <!-- <div id="portfolio-modal-content"> -->
-                <p class="portfolio-modal-description">
-                  Upon entering A1 Fitness, unauthorized users will only be
-                  allowed to view the homepage, login, and signup views. Once
-                  users create an account, they will be allowed to track their
-                  fitness journey and calories per workout.
-                </p>
-                <p class="portfolio-modal-description">
-                  The mission for this application was to learn the cycle of
-                  creating a MERN style application from development to
-                  production, as well as creating a application I would enjoy
-                  creating through the very end.
-                </p>
-
-                <div
-                  class="portfolio-modal-github-board portfolio-modal-description"
-                >
-                  <h4>Want To Track my Tickets?</h4>
-                  <p>
-                    <b>Kanban Board:</b>
-                    <a
-                      href="https://github.com/users/Alfredoeb9/projects/4"
-                      target="_blank"
-                      class="buttonLink"
-                      onclick="window.open('https://github.com/users/Alfredoeb9/projects/4', '_blank')"
-                      >A1 Fitness Board</a
-                    >
-                  </p>
-
-                  <p>
-                    <b>Github:</b>
-                    <a
-                      href="https://github.com/Alfredoeb9/Fitness-App-FrontEnd"
-                      target="_blank"
-                      class="buttonLink"
-                      onclick="window.open('https://github.com/Alfredoeb9/Fitness-App-FrontEnd', '_blank')"
-                      >A1 Fitness Github</a
-                    >
-                  </p>
-                </div>
-
-                <div class="portfolio_function">
-                  <h2 class="portfolio_functionHeading">Tech Stack:</h2>
-                  <ul class="portfolio_functionList">
-                    <li class="portfolio_functionItem">HTML5</li>
-                    <li class="portfolio_functionItem">CSS3</li>
-                    <li class="portfolio_functionItem">React.js</li>
-                    <li class="portfolio_functionItem">Node.js</li>
-                    <li class="portfolio_functionItem">Express.js</li>
-                    <li class="portfolio_functionItem">Mongodb</li>
-                  </ul>
-                  <div class="portfolio_btn">
-                    <a
-                      class="portfolio_siteLink"
-                      href="https://fitness-app-front-end-eight.vercel.app/welcome"
-                      target="_blank"
-                      lang="en-us"
-                    >
-                      <button
-                        onclick="window.open('https://fitness-app-front-end-eight.vercel.app/welcome', '_blank')"
-                        class="portfolio_btnSite"
-                      >
-                        View The Website
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /modal -->
-          </figure>
-
-          <!-- Portfolio item 1 -->
-
-          <figure class="portfolio_item">
-            <img
-              class="portfolio_image"
-              src="img/a1-ecommerce.png"
-              alt="Seafood plate with salmon and lemon served on a white plate."
-            />
-            <figcaption>
-              <h2 class="portfolio_title">A1 Kicks</h2>
-              <!-- <p class="portfolio_desc"></p> -->
-              <a href="#" class="portfolio_link">More info</a>
-            </figcaption>
-
-            <!-- Portfolio modal 1 -->
-            <div class="portfolio_modal">
-              <button class="modal_close" aria-label="Modal Close">
-                <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
-                  <g transform="translate(-15 -15)">
-                    <polygon
-                      class="st0"
-                      points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-                    35.8,16.5 37,17.7 	"
+                    <!-- /modal -->
+                  </figure>
+        
+                  <!-- Portfolio item 1 -->
+        
+                  <figure class="portfolio_item">
+                    <img
+                      class="portfolio_image"
+                      src="img/a1-ecommerce.png"
+                      alt="Seafood plate with salmon and lemon served on a white plate."
                     />
-                  </g>
-                </svg>
-              </button>
-              <div class="portfolio_header header-one">
-                <div class="portfolio_title-box">
-                  <h2 class="portfolio_title">A1 Kicks</h2>
-                  <p class="portfolio_subtitle">
-                    A1 Kicks is a online retail shoe eCommerce store selling
-                    modern sneakers.
-                  </p>
-                </div>
-              </div>
-              <!-- / portfolio-header -->
-              <div class="portfolio_content">
-                <p>
-                  A1 Kicks is a online retail shoe eCommerce store selling
-                  modern sneakers utilizing next.js, sanity.io (headless CMS),
-                  react notifications and stripe checkout.
-                </p>
-
-                <div class="portfolio_iMacContainer">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="desktop-wrapper">
-                        <video
-                          id="videoElement"
-                          class="fillwidth modal_video"
-                          muted="true"
-                          loop="true"
-                          autoplay="true"
-                          preload="metadata"
-                          poster="img/a1-ecommerce.png"
-                          playsinline
+                    <figcaption>
+                      <h2 class="portfolio_title">A1 Kicks</h2>
+                      <!-- <p class="portfolio_desc"></p> -->
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+        
+                    <!-- Portfolio modal 1 -->
+                    <div class="portfolio_modal">
+                      <button class="modal_close" aria-label="Modal Close">
+                        <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                          <g transform="translate(-15 -15)">
+                            <polygon
+                              class="st0"
+                              points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                            35.8,16.5 37,17.7 	"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                      <div class="portfolio_header header-one">
+                        <div class="portfolio_title-box">
+                          <h2 class="portfolio_title">A1 Kicks</h2>
+                          <p class="portfolio_subtitle">
+                            A1 Kicks is a online retail shoe eCommerce store selling
+                            modern sneakers.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- / portfolio-header -->
+                      <div class="portfolio_content">
+                        <p>
+                          A1 Kicks is a online retail shoe eCommerce store selling
+                          modern sneakers utilizing next.js, sanity.io (headless CMS),
+                          react notifications and stripe checkout.
+                        </p>
+        
+                        <div class="portfolio_iMacContainer">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="desktop-wrapper">
+                                <video
+                                  id="videoElement"
+                                  class="fillwidth modal_video"
+                                  muted="true"
+                                  loop="true"
+                                  autoplay="true"
+                                  preload="metadata"
+                                  poster="img/a1-ecommerce.png"
+                                  playsinline
+                                >
+                                  <!-- <source 
+                          src="video/Kingchef-Slideshow-phone.mp4" 
+                          type="video/mp4" />                        Load for mobile phones -->
+        
+                                  <source src="video/A1_SNKRS.mp4" type="video/mp4" />
+                                  <!--  Load for web that load mp4 files -->
+        
+                                  <!-- <source 
+                          src="video/Kingchef-Slideshow-web.mkv"
+                          type="video/mkv"/>                        Load for web that load mkv files -->
+        
+                                  <!-- <track src="subtitles-en.vtt" label="English captions" kind="captions" srclang="en"> -->
+                                </video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <!-- <button class="fullScreenVid" id="butFullScreenVid">Make Video Full Screen</button> -->
+                        <!-- <div id="portfolio-modal-content"> -->
+                        <p class="portfolio-modal-description">
+                          Upon entering A1 Kicks you will be presented with a modern,
+                          minimalistic, light contrast application. When creating this
+                          application I wanted a simple backend where a user can easily
+                          sign into, import their products as they like and then use a
+                          powerful, and fast framework like next.js to render that data.
+                          Instead of creating a whole seperate application a user would
+                          have to use to upload their products into a database. With
+                          that in mind I went ahead and used Sanity.io one of the most
+                          supported and well documented headless CMS.
+                        </p>
+                        <p class="portfolio-modal-description">
+                          The most appeling aspect of this application is the simplicity
+                          of the applications as a user and the opportunity to easily
+                          scale a application using a stack like this as a developer and
+                          as product owner.
+                          <!-- <a
+                            target="_blank"
+                            href="https://github.com/Alfredoeb9/kingchef/blob/master/mainSlideShow.js"
+                            >(slideShow)</a
+                          > -->
+                        </p>
+        
+                        <div
+                          class="portfolio-modal-github-board portfolio-modal-description"
                         >
-                          <!-- <source 
-                  src="video/Kingchef-Slideshow-phone.mp4" 
-                  type="video/mp4" />                        Load for mobile phones -->
-
-                          <source src="video/A1_SNKRS.mp4" type="video/mp4" />
-                          <!--  Load for web that load mp4 files -->
-
-                          <!-- <source 
-                  src="video/Kingchef-Slideshow-web.mkv"
-                  type="video/mkv"/>                        Load for web that load mkv files -->
-
-                          <!-- <track src="subtitles-en.vtt" label="English captions" kind="captions" srclang="en"> -->
-                        </video>
+                          <h4>Want To Track my Github?</h4>
+                          <p>
+                            <b>Github:</b>
+        
+                            <a
+                              href="https://github.com/Alfredoeb9/a1-ecommerce"
+                              target="_blank"
+                              class="buttonLink"
+                              onclick="window.open('https://github.com/Alfredoeb9/a1-ecommerce', '_blank')"
+                              >A1 Kicks Github</a
+                            >
+                          </p>
+                        </div>
+                        <div class="portfolio_function">
+                          <h2 class="portfolio_functionHeading">Tech Stack:</h2>
+                          <ul class="portfolio_functionList">
+                            <li class="portfolio_functionItem">HTML5</li>
+                            <li class="portfolio_functionItem">CSS3</li>
+                            <li class="portfolio_functionItem">
+                              JavaScript ES6(Babel)
+                            </li>
+                            <li class="portfolio_functionItem">React.js</li>
+                            <li class="portfolio_functionItem">Next.js</li>
+                            <li class="portfolio_functionItem">Sanity.io</li>
+                            <li class="portfolio_functionItem">Stripe</li>
+                          </ul>
+                          <div class="portfolio_btn">
+                            <a
+                              class="portfolio_siteLink"
+                              href="https://a1-ecommerce.vercel.app/"
+                              target="_blank"
+                              lang="en-us"
+                            >
+                              <button
+                                onclick="window.open('https://a1-ecommerce.vercel.app/', '_blank')"
+                                class="portfolio_btnSite"
+                              >
+                                View The Website
+                              </button>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <!-- <button class="fullScreenVid" id="butFullScreenVid">Make Video Full Screen</button> -->
-                <!-- <div id="portfolio-modal-content"> -->
-                <p class="portfolio-modal-description">
-                  Upon entering A1 Kicks you will be presented with a modern,
-                  minimalistic, light contrast application. When creating this
-                  application I wanted a simple backend where a user can easily
-                  sign into, import their products as they like and then use a
-                  powerful, and fast framework like next.js to render that data.
-                  Instead of creating a whole seperate application a user would
-                  have to use to upload their products into a database. With
-                  that in mind I went ahead and used Sanity.io one of the most
-                  supported and well documented headless CMS.
-                </p>
-                <p class="portfolio-modal-description">
-                  The most appeling aspect of this application is the simplicity
-                  of the applications as a user and the opportunity to easily
-                  scale a application using a stack like this as a developer and
-                  as product owner.
-                  <!-- <a
-                    target="_blank"
-                    href="https://github.com/Alfredoeb9/kingchef/blob/master/mainSlideShow.js"
-                    >(slideShow)</a
-                  > -->
-                </p>
-
-                <div
-                  class="portfolio-modal-github-board portfolio-modal-description"
-                >
-                  <h4>Want To Track my Github?</h4>
-                  <p>
-                    <b>Github:</b>
-
-                    <a
-                      href="https://github.com/Alfredoeb9/a1-ecommerce"
-                      target="_blank"
-                      class="buttonLink"
-                      onclick="window.open('https://github.com/Alfredoeb9/a1-ecommerce', '_blank')"
-                      >A1 Kicks Github</a
-                    >
-                  </p>
-                </div>
-                <div class="portfolio_function">
-                  <h2 class="portfolio_functionHeading">Tech Stack:</h2>
-                  <ul class="portfolio_functionList">
-                    <li class="portfolio_functionItem">HTML5</li>
-                    <li class="portfolio_functionItem">CSS3</li>
-                    <li class="portfolio_functionItem">
-                      JavaScript ES6(Babel)
-                    </li>
-                    <li class="portfolio_functionItem">React.js</li>
-                    <li class="portfolio_functionItem">Next.js</li>
-                    <li class="portfolio_functionItem">Sanity.io</li>
-                    <li class="portfolio_functionItem">Stripe</li>
-                  </ul>
-                  <div class="portfolio_btn">
-                    <a
-                      class="portfolio_siteLink"
-                      href="https://a1-ecommerce.vercel.app/"
-                      target="_blank"
-                      lang="en-us"
-                    >
-                      <button
-                        onclick="window.open('https://a1-ecommerce.vercel.app/', '_blank')"
-                        class="portfolio_btnSite"
-                      >
-                        View The Website
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /modal -->
-          </figure>
-
-          <!-- Portfolio item 2 -->
-          <figure class="portfolio_item">
-            <img
-              class="portfolio_image"
-              src="img/geolocation.png"
-              alt="Geolocation home page"
-            />
-            <figcaption>
-              <h2 class="portfolio_title">Geolocation</h2>
-              <p class="portfolio_desc"></p>
-              <a href="#" class="portfolio_link">More info</a>
-            </figcaption>
-            <div class="portfolio_modal">
-              <button class="modal_close">
-                <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
-                  <g transform="translate(-15 -15)">
-                    <polygon
-                      class="st0"
-                      points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-                  35.8,16.5 37,17.7 	"
+                    <!-- /modal -->
+                  </figure>
+        
+                  <!-- Portfolio item 2 -->
+                  <figure class="portfolio_item">
+                    <img
+                      class="portfolio_image"
+                      src="img/geolocation.png"
+                      alt="Geolocation home page"
                     />
-                  </g>
-                </svg>
-              </button>
-              <div class="portfolio_header header-two">
-                <div class="portfolio_title-box">
-                  <h2 class="portfolio_title">Geolocation</h2>
-                  <p class="portfolio_subtitle">
-                    Geolocation is a full stack application where users can sign
-                    up, study and take quizzes on geography.
-                  </p>
-                </div>
-              </div>
-              <!-- / portfolio-header -->
-              <div class="portfolio_content">
-                <p>
-                  Geolocation is a full stack application where users can sign
-                  up, study and take quizzes on geography. This application was
-                  built using React, material ui, redux, redux-thunk, Node.js,
-                  Express, Mongodb.
-                </p>
-                <div class="portfolio_iMacContainer">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="desktop-wrapper">
-                        <video
-                          class="fillwidth modal_video"
-                          playsinline
-                          muted
-                          loop
-                          autoplay
-                          preload="metadata"
-                          width="560"
-                          height="315"
+                    <figcaption>
+                      <h2 class="portfolio_title">Geolocation</h2>
+                      <p class="portfolio_desc"></p>
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+                    <div class="portfolio_modal">
+                      <button class="modal_close">
+                        <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                          <g transform="translate(-15 -15)">
+                            <polygon
+                              class="st0"
+                              points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                          35.8,16.5 37,17.7 	"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                      <div class="portfolio_header header-two">
+                        <div class="portfolio_title-box">
+                          <h2 class="portfolio_title">Geolocation</h2>
+                          <p class="portfolio_subtitle">
+                            Geolocation is a full stack application where users can sign
+                            up, study and take quizzes on geography.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- / portfolio-header -->
+                      <div class="portfolio_content">
+                        <p>
+                          Geolocation is a full stack application where users can sign
+                          up, study and take quizzes on geography. This application was
+                          built using React, material ui, redux, redux-thunk, Node.js,
+                          Express, Mongodb.
+                        </p>
+                        <div class="portfolio_iMacContainer">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="desktop-wrapper">
+                                <video
+                                  class="fillwidth modal_video"
+                                  playsinline
+                                  muted
+                                  loop
+                                  autoplay
+                                  preload="metadata"
+                                  width="560"
+                                  height="315"
+                                >
+                                  <source
+                                    src="video/geolocation.mp4"
+                                    type="video/mp4"
+                                  />
+        
+                                  <!-- <source
+                                    src="video/mvlLandscapeOpt.m4v"
+                                    type="video/m4v"
+                                  /> -->
+                                </video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="portfolio-modal-description">
+                          Though this application is not rich in css the main motivation
+                          behind creating this application was, I wanted to test my
+                          skill and built a full stack secure application from
+                          development to production.
+                        </p>
+                        <p class="portfolio-modal-description">
+                          The main challenge I was faced while creating geolocation was
+                          implementing the verify email/ activate user token. Through
+                          trial and error I was able to create a secure authenication
+                          method.
+                        </p>
+        
+                        <div
+                          class="portfolio-modal-github-board portfolio-modal-description"
                         >
-                          <source
-                            src="video/geolocation.mp4"
-                            type="video/mp4"
+                          <h4>Want To Track my Github?</h4>
+                          <p>
+                            <b>Github:</b>
+        
+                            <a
+                              href="https://github.com/Alfredoeb9/geolocation-quiz-frontend"
+                              target="_blank"
+                              class="buttonLink"
+                              onclick="window.open('https://github.com/Alfredoeb9/geolocation-quiz-frontend', '_blank')"
+                              >Geolocation Github</a
+                            >
+                          </p>
+                        </div>
+                        <div class="portfolio_function">
+                          <h2 class="portfolio_functionHeading">Tech Stack:</h2>
+                          <ul class="portfolio_functionList">
+                            <li class="portfolio_functionItem">React</li>
+                            <li class="portfolio_functionItem">Material ui</li>
+                            <li class="portfolio_functionItem">CSS3</li>
+                            <li class="portfolio_functionItem">
+                              Redux / Reduxjs/toolkit / Redux-thunk
+                            </li>
+                            <li class="portfolio_functionItem">Node.js</li>
+                            <li class="portfolio_functionItem">Express</li>
+                            <li class="portfolio_functionItem">Mongodb</li>
+                          </ul>
+                          <div class="portfolio_btn">
+                            <!-- <button class="portfolio_btnSite">
+                            <a class="portfolio_siteLink" href="" target="_blank" lang="en-us">View The Website</a>
+                          </button> -->
+                            <a
+                              class="portfolio_siteLink"
+                              href="https://geolocation-quiz-frontend.vercel.app/"
+                              lang="en-us"
+                            >
+                              <button
+                                onclick="window.open('https://geolocation-quiz-frontend.vercel.app/', '_blank')"
+                                class="portfolio_btnSite"
+                              >
+                                View The Website
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+        
+                  <!-- Portfolio item 3 -->
+                  <!-- <figure class="portfolio_item">
+                    <img
+                      class="portfolio_image"
+                      src="img/portfolio-03.jpg"
+                      alt="portfolio item"
+                    />
+                    <figcaption>
+                      <h2 class="portfolio_title">Project Name</h2>
+                      <p class="portfolio_desc">
+                        A short description could go right here
+                      </p>
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+                  </figure> -->
+        
+                  <!-- Portfolio item 4 -->
+                  <figure class="portfolio_item">
+                    <img
+                      class="portfolio_image"
+                      src="img/bStadiumThumbNail.jpg"
+                      alt="portfolio item"
+                    />
+                    <figcaption>
+                      <h2 class="portfolio_title">bStadium</h2>
+                      <p class="portfolio_desc">
+                        Building is marked with exceptional architecture, modern
+                        technologies and engineering solutions and being developed in
+                        the multifunctional quarter.
+                      </p>
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+        
+                    <div class="portfolio_modal">
+                      <button class="modal_close">
+                        <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                          <g transform="translate(-15 -15)">
+                            <polygon
+                              class="st0"
+                              points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                            35.8,16.5 37,17.7 	"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                      <div class="portfolio_header header-five">
+                        <div class="portfolio_title-box">
+                          <h2 class="portfolio_title">Business Stadium</h2>
+                          <p class="portfolio_subtitle">
+                            Building is marked with exceptional architecture, modern
+                            technologies and engineering solutions and being developed
+                            in the multifunctional quarter.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- / portfolio-header -->
+                      <div class="portfolio_content">
+                        <p>
+                          Business Stadium is a multifunctional real estate project,
+                          located in the center of Vilnius, just 700 meters from
+                          Cathedreal Square. I redesigned and refactored the website
+                          with my own code using; HTML5, CSS3 with pre-processor
+                          SASS(SCSS), JavaScript(Babel ES6), jQuery and Gulp v4 to
+                          automate all my tasks and production. Take a look at my gulp
+                          file
+                          <a href="https://github.com/Alfredoeb9/gulpv4"
+                            >(github: gulpv4)</a
+                          >
+                        </p>
+                        <div class="portfolio_iMacContainer">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="desktop-wrapper">
+                                <video
+                                  class="fillwidth modal_video"
+                                  playsinline
+                                  muted
+                                  loop
+                                  autoplay
+                                  preload="metadata"
+                                  width="560"
+                                  height="315"
+                                >
+                                  <source
+                                    src="video/BstadiumDemo-web.mp4"
+                                    type="video/mp4"
+                                  />
+        
+                                  <!-- <source
+                                    src="video/mvlLandscapeOpt.m4v"
+                                    type="video/m4v"/> -->
+                                </video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="portfolio-modal-description">
+                          What I mainly focused on when redesigning this website was
+                          refactoring all the code to be SEO safe, 100 score in
+                          lighthouse audit, image lazy loading, and accesible across all
+                          devices.
+                        </p>
+                        <p class="portfolio-modal-description">
+                          The main challenge here was how to lazy load the images
+                          offscreen as I have never done this before but accomplished.
+                          Lazy load is when you only load a certain image file only when
+                          the image is in view of your screen to help save data on
+                          mobile and save loading assets.
+                        </p>
+        
+                        <div
+                          class="portfolio-modal-github-board portfolio-modal-description"
+                        >
+                          <h4>Want To Track my Github?</h4>
+                          <p>
+                            <b>Github:</b>
+        
+                            <a
+                              href="https://github.com/Alfredoeb9/bStadium"
+                              target="_blank"
+                              class="buttonLink"
+                              onclick="window.open('https://github.com/Alfredoeb9/bStadium', '_blank')"
+                              >bStadium Github</a
+                            >
+                          </p>
+                        </div>
+                        <div class="portfolio_function">
+                          <h2 class="portfolio_functionHeading">Tech Stack:</h2>
+                          <ul class="portfolio_functionList">
+                            <li class="portfolio_functionItem">HTML5</li>
+                            <li class="portfolio_functionItem">CSS3</li>
+                            <li class="portfolio_functionItem">SASS(SCSS)</li>
+                            <li class="portfolio_functionItem">jQuery</li>
+                            <li class="portfolio_functionItem">
+                              JavaScript ES6(Babel)
+                            </li>
+                            <li class="portfolio_functionItem">Gulp 4</li>
+                          </ul>
+                          <div class="portfolio_btn">
+                            <a
+                              class="portfolio_siteLink"
+                              href="https://b-stadium.vercel.app/index.html"
+                              lang="en-us"
+                            >
+                              <button
+                                onclick="window.open('https://b-stadium.vercel.app/index.html', '_blank')"
+                                class="portfolio_btnSite"
+                              >
+                                View The Website
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+        
+                  <!-- Portfolio item 5 -->
+                  <figure class="portfolio_item featured">
+                    <img
+                      class="portfolio_image"
+                      src="img/eleThumbNail.png"
+                      alt="portfolio item"
+                    />
+                    <figcaption>
+                      <h2 class="portfolio_title">ELE (Work In Progress)</h2>
+                      <p class="portfolio_desc">
+                        ELE is a online tournament application where users and teams can
+                        compete against other teams for experience, and cash prizes.
+                      </p>
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+        
+                    <div class="portfolio_modal">
+                      <button class="modal_close">
+                        <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                          <g transform="translate(-15 -15)">
+                            <polygon
+                              class="st0"
+                              points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                            35.8,16.5 37,17.7 	"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                      <div class="portfolio_header header-six">
+                        <div class="portfolio_title-box">
+                          <h2 class="portfolio_title">ELE (Work In Progress)</h2>
+                          <p class="portfolio_subtitle">
+                            ELE is a online tournament application where users and teams
+                            can compete against other teams for experience, and cash
+                            prizes.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- / portfolio-header -->
+                      <div class="portfolio_content">
+                        <p>
+                          ELE is a online tournament application, motivation behind
+                          building this applicatipm was my passion for E-Sports, and
+                          remembering the days when I would compete as a hobby as a
+                          young kid. This application is built using Javascripts most
+                          modern and production ready technologies; Next.js 14 (App
+                          Router), React.js, Typescript, Tanstack React-Query, Redux,
+                          SQLite, TRPC, Drizzle ORM, with TursoDB.
+                        </p>
+        
+                        <div>
+                          <img
+                            class="modal_image"
+                            src="img/eleThumbNail-desk.png"
+                            alt="an image"
                           />
-
-                          <!-- <source
-                            src="video/mvlLandscapeOpt.m4v"
-                            type="video/m4v"
-                          /> -->
-                        </video>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p class="portfolio-modal-description">
-                  Though this application is not rich in css the main motivation
-                  behind creating this application was, I wanted to test my
-                  skill and built a full stack secure application from
-                  development to production.
-                </p>
-                <p class="portfolio-modal-description">
-                  The main challenge I was faced while creating geolocation was
-                  implementing the verify email/ activate user token. Through
-                  trial and error I was able to create a secure authenication
-                  method.
-                </p>
-
-                <div
-                  class="portfolio-modal-github-board portfolio-modal-description"
-                >
-                  <h4>Want To Track my Github?</h4>
-                  <p>
-                    <b>Github:</b>
-
-                    <a
-                      href="https://github.com/Alfredoeb9/geolocation-quiz-frontend"
-                      target="_blank"
-                      class="buttonLink"
-                      onclick="window.open('https://github.com/Alfredoeb9/geolocation-quiz-frontend', '_blank')"
-                      >Geolocation Github</a
-                    >
-                  </p>
-                </div>
-                <div class="portfolio_function">
-                  <h2 class="portfolio_functionHeading">Tech Stack:</h2>
-                  <ul class="portfolio_functionList">
-                    <li class="portfolio_functionItem">React</li>
-                    <li class="portfolio_functionItem">Material ui</li>
-                    <li class="portfolio_functionItem">CSS3</li>
-                    <li class="portfolio_functionItem">
-                      Redux / Reduxjs/toolkit / Redux-thunk
-                    </li>
-                    <li class="portfolio_functionItem">Node.js</li>
-                    <li class="portfolio_functionItem">Express</li>
-                    <li class="portfolio_functionItem">Mongodb</li>
-                  </ul>
-                  <div class="portfolio_btn">
-                    <!-- <button class="portfolio_btnSite">
-                    <a class="portfolio_siteLink" href="" target="_blank" lang="en-us">View The Website</a>
-                  </button> -->
-                    <a
-                      class="portfolio_siteLink"
-                      href="https://geolocation-quiz-frontend.vercel.app/"
-                      lang="en-us"
-                    >
-                      <button
-                        onclick="window.open('https://geolocation-quiz-frontend.vercel.app/', '_blank')"
-                        class="portfolio_btnSite"
-                      >
-                        View The Website
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </figure>
-
-          <!-- Portfolio item 3 -->
-          <!-- <figure class="portfolio_item">
-            <img
-              class="portfolio_image"
-              src="img/portfolio-03.jpg"
-              alt="portfolio item"
-            />
-            <figcaption>
-              <h2 class="portfolio_title">Project Name</h2>
-              <p class="portfolio_desc">
-                A short description could go right here
-              </p>
-              <a href="#" class="portfolio_link">More info</a>
-            </figcaption>
-          </figure> -->
-
-          <!-- Portfolio item 4 -->
-          <figure class="portfolio_item">
-            <img
-              class="portfolio_image"
-              src="img/bStadiumThumbNail.jpg"
-              alt="portfolio item"
-            />
-            <figcaption>
-              <h2 class="portfolio_title">bStadium</h2>
-              <p class="portfolio_desc">
-                Building is marked with exceptional architecture, modern
-                technologies and engineering solutions and being developed in
-                the multifunctional quarter.
-              </p>
-              <a href="#" class="portfolio_link">More info</a>
-            </figcaption>
-
-            <div class="portfolio_modal">
-              <button class="modal_close">
-                <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
-                  <g transform="translate(-15 -15)">
-                    <polygon
-                      class="st0"
-                      points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-                    35.8,16.5 37,17.7 	"
-                    />
-                  </g>
-                </svg>
-              </button>
-              <div class="portfolio_header header-five">
-                <div class="portfolio_title-box">
-                  <h2 class="portfolio_title">Business Stadium</h2>
-                  <p class="portfolio_subtitle">
-                    Building is marked with exceptional architecture, modern
-                    technologies and engineering solutions and being developed
-                    in the multifunctional quarter.
-                  </p>
-                </div>
-              </div>
-              <!-- / portfolio-header -->
-              <div class="portfolio_content">
-                <p>
-                  Business Stadium is a multifunctional real estate project,
-                  located in the center of Vilnius, just 700 meters from
-                  Cathedreal Square. I redesigned and refactored the website
-                  with my own code using; HTML5, CSS3 with pre-processor
-                  SASS(SCSS), JavaScript(Babel ES6), jQuery and Gulp v4 to
-                  automate all my tasks and production. Take a look at my gulp
-                  file
-                  <a href="https://github.com/Alfredoeb9/gulpv4"
-                    >(github: gulpv4)</a
-                  >
-                </p>
-                <div class="portfolio_iMacContainer">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="desktop-wrapper">
-                        <video
-                          class="fillwidth modal_video"
-                          playsinline
-                          muted
-                          loop
-                          autoplay
-                          preload="metadata"
-                          width="560"
-                          height="315"
+                        </div>
+                        <p class="portfolio-modal-description">
+                          When brainstroming this application, thinking of what tech
+                          stack to use was the probably the most time consuming process
+                          during the inital developement. I knew I wanted something
+                          within the Javascript eco system as much as my background is
+                          in Javascript with React.js being the main framework, I was
+                          more than open to researching other frameworks other than
+                          React.js, but when it came down to reading into multiple
+                          framework docs it only made me realize why I always come back
+                          to react.js. With the finalized decision that react.js would
+                          be my framework I have heard read and seen great production
+                          ready applications using Next.js as their framework and made
+                          the ultimate decision to use Next.js.
+                        </p>
+                        <p class="portfolio-modal-description">
+                          The main challenge here after deciding Next.js as my framework
+                          was what other technology should I use with Next.js, should I
+                          prisma as my ORM or adopt the new
+                          <a target="_blank" href="https://orm.drizzle.team/"
+                            >"if you now sql you know drizzle"</a
+                          >. What SQL database should I use, MySQL, or PostSQL along
+                          side which database provider should I use. After extensive
+                          research and a few trail and errors I have found a stack I
+                          love using and makes me happy to code in and that tech stack
+                          being ... woah woah woah being as I created this applications
+                          using MySQL with Planetscale, a few weeks after writing this
+                          planetscale had decided to
+                          <a
+                            href="https://planetscale.com/docs/concepts/hobby-plan-deprecation-faq"
+                            target="_blank"
+                            onclick="window.open('https://planetscale.com/docs/concepts/hobby-plan-deprecation-faq', '_blank')"
+                            >remove their free trial</a
+                          >
+                          so with this news I then did some more research and found
+                          another trustworthy Database provider with a robust, fast, and
+                          scaleable application and that being
+                          <a
+                            onclick="window.open('https://turso.tech/', '_blank')"
+                            href="https://turso.tech/"
+                            >TursoDB</a
+                          >
+                          Next.js 14 (App Router), React.js, Tanstack React-Query,
+                          Redux, SQLite, TRPC, Drizzle ORM, with TursoDB.
+                        </p>
+        
+                        <div
+                          class="portfolio-modal-description portfolio-modal-github-board"
                         >
-                          <source
-                            src="video/BstadiumDemo-web.mp4"
-                            type="video/mp4"
-                          />
-
-                          <!-- <source
-                            src="video/mvlLandscapeOpt.m4v"
-                            type="video/m4v"/> -->
-                        </video>
+                          <p>Follow along the code journey</p>
+                          <ul class="portfolio_github">
+                            <li>
+                              <b> Github:</b>
+                              <a
+                                href="https://github.com/Alfredoeb9/ele?tab=readme-ov-file#ele-main-app"
+                                target="_blank"
+                                onclick="window.open('https://github.com/Alfredoeb9/ele?tab=readme-ov-file#ele-main-app', '_blank')"
+                                >github</a
+                              >
+                            </li>
+                            <li>
+                              <b>Kanban Board:</b>
+                              <a
+                                href="https://github.com/users/Alfredoeb9/projects/7"
+                                target="_blank"
+                                onclick="window.open('https://github.com/users/Alfredoeb9/projects/7', '_blank')"
+                                >Ele Board</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="portfolio_function">
+                          <h2 class="portfolio_functionHeading">Tech Stack:</h2>
+                          <ul class="portfolio_functionList">
+                            <li class="portfolio_functionItem">HTML5</li>
+                            <li class="portfolio_functionItem">CSS3</li>
+                            <li class="portfolio_functionItem">Next.js 14</li>
+                            <li class="portfolio_functionItem">Typescript</li>
+                            <li class="portfolio_functionItem">Tanstack React-Query</li>
+                            <li class="portfolio_functionItem">Redux</li>
+                            <li class="portfolio_functionItem">SQLite</li>
+                            <li class="portfolio_functionItem">TRPC</li>
+                            <li class="portfolio_functionItem">Drizzle ORM</li>
+                            <li class="portfolio_functionItem">TursoDB</li>
+                          </ul>
+                          <div class="portfolio_btn">
+                            <a
+                              class="portfolio_siteLink"
+                              href="https://ele-t3.vercel.app/"
+                              lang="en-us"
+                            >
+                              <button
+                                onclick="window.open('https://ele-t3.vercel.app/', '_blank')"
+                                class="portfolio_btnSite"
+                              >
+                                View The Website
+                              </button>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </figure>
                 </div>
-                <p class="portfolio-modal-description">
-                  What I mainly focused on when redesigning this website was
-                  refactoring all the code to be SEO safe, 100 score in
-                  lighthouse audit, image lazy loading, and accesible across all
-                  devices.
-                </p>
-                <p class="portfolio-modal-description">
-                  The main challenge here was how to lazy load the images
-                  offscreen as I have never done this before but accomplished.
-                  Lazy load is when you only load a certain image file only when
-                  the image is in view of your screen to help save data on
-                  mobile and save loading assets.
-                </p>
+              </li>
 
-                <div
-                  class="portfolio-modal-github-board portfolio-modal-description"
-                >
-                  <h4>Want To Track my Github?</h4>
-                  <p>
-                    <b>Github:</b>
-
-                    <a
-                      href="https://github.com/Alfredoeb9/bStadium"
-                      target="_blank"
-                      class="buttonLink"
-                      onclick="window.open('https://github.com/Alfredoeb9/bStadium', '_blank')"
-                      >bStadium Github</a
-                    >
-                  </p>
-                </div>
-                <div class="portfolio_function">
-                  <h2 class="portfolio_functionHeading">Tech Stack:</h2>
-                  <ul class="portfolio_functionList">
-                    <li class="portfolio_functionItem">HTML5</li>
-                    <li class="portfolio_functionItem">CSS3</li>
-                    <li class="portfolio_functionItem">SASS(SCSS)</li>
-                    <li class="portfolio_functionItem">jQuery</li>
-                    <li class="portfolio_functionItem">
-                      JavaScript ES6(Babel)
-                    </li>
-                    <li class="portfolio_functionItem">Gulp 4</li>
-                  </ul>
-                  <div class="portfolio_btn">
-                    <a
-                      class="portfolio_siteLink"
-                      href="https://b-stadium.vercel.app/index.html"
-                      lang="en-us"
-                    >
-                      <button
-                        onclick="window.open('https://b-stadium.vercel.app/index.html', '_blank')"
-                        class="portfolio_btnSite"
-                      >
-                        View The Website
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </figure>
-
-          <!-- Portfolio item 5 -->
-          <figure class="portfolio_item featured">
-            <img
-              class="portfolio_image"
-              src="img/eleThumbNail.png"
-              alt="portfolio item"
-            />
-            <figcaption>
-              <h2 class="portfolio_title">ELE (Work In Progress)</h2>
-              <p class="portfolio_desc">
-                ELE is a online tournament application where users and teams can
-                compete against other teams for experience, and cash prizes.
-              </p>
-              <a href="#" class="portfolio_link">More info</a>
-            </figcaption>
-
-            <div class="portfolio_modal">
-              <button class="modal_close">
-                <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
-                  <g transform="translate(-15 -15)">
-                    <polygon
-                      class="st0"
-                      points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-                    35.8,16.5 37,17.7 	"
+              <li class="carousel_slide">
+                <div class="portfolio_items ">
+            
+                  <!-- First project -->
+                  <figure class="portfolio_item">
+                    <img
+                      class="portfolio_image"
+                      src="img/a1-fitness.png"
+                      alt="a1 fitness logger app homepage with fitness equipment as a background"
                     />
-                  </g>
-                </svg>
-              </button>
-              <div class="portfolio_header header-six">
-                <div class="portfolio_title-box">
-                  <h2 class="portfolio_title">ELE (Work In Progress)</h2>
-                  <p class="portfolio_subtitle">
-                    ELE is a online tournament application where users and teams
-                    can compete against other teams for experience, and cash
-                    prizes.
-                  </p>
-                </div>
-              </div>
-              <!-- / portfolio-header -->
-              <div class="portfolio_content">
-                <p>
-                  ELE is a online tournament application, motivation behind
-                  building this applicatipm was my passion for E-Sports, and
-                  remembering the days when I would compete as a hobby as a
-                  young kid. This application is built using Javascripts most
-                  modern and production ready technologies; Next.js 14 (App
-                  Router), React.js, Typescript, Tanstack React-Query, Redux,
-                  SQLite, TRPC, Drizzle ORM, with TursoDB.
-                </p>
-
-                <div>
-                  <img
-                    class="modal_image"
-                    src="img/eleThumbNail-desk.png"
-                    alt="an image"
-                  />
-                </div>
-                <p class="portfolio-modal-description">
-                  When brainstroming this application, thinking of what tech
-                  stack to use was the probably the most time consuming process
-                  during the inital developement. I knew I wanted something
-                  within the Javascript eco system as much as my background is
-                  in Javascript with React.js being the main framework, I was
-                  more than open to researching other frameworks other than
-                  React.js, but when it came down to reading into multiple
-                  framework docs it only made me realize why I always come back
-                  to react.js. With the finalized decision that react.js would
-                  be my framework I have heard read and seen great production
-                  ready applications using Next.js as their framework and made
-                  the ultimate decision to use Next.js.
-                </p>
-                <p class="portfolio-modal-description">
-                  The main challenge here after deciding Next.js as my framework
-                  was what other technology should I use with Next.js, should I
-                  prisma as my ORM or adopt the new
-                  <a target="_blank" href="https://orm.drizzle.team/"
-                    >"if you now sql you know drizzle"</a
-                  >. What SQL database should I use, MySQL, or PostSQL along
-                  side which database provider should I use. After extensive
-                  research and a few trail and errors I have found a stack I
-                  love using and makes me happy to code in and that tech stack
-                  being ... woah woah woah being as I created this applications
-                  using MySQL with Planetscale, a few weeks after writing this
-                  planetscale had decided to
-                  <a
-                    href="https://planetscale.com/docs/concepts/hobby-plan-deprecation-faq"
-                    target="_blank"
-                    onclick="window.open('https://planetscale.com/docs/concepts/hobby-plan-deprecation-faq', '_blank')"
-                    >remove their free trial</a
-                  >
-                  so with this news I then did some more research and found
-                  another trustworthy Database provider with a robust, fast, and
-                  scaleable application and that being
-                  <a
-                    onclick="window.open('https://turso.tech/', '_blank')"
-                    href="https://turso.tech/"
-                    >TursoDB</a
-                  >
-                  Next.js 14 (App Router), React.js, Tanstack React-Query,
-                  Redux, SQLite, TRPC, Drizzle ORM, with TursoDB.
-                </p>
-
-                <div
-                  class="portfolio-modal-description portfolio-modal-github-board"
-                >
-                  <p>Follow along the code journey</p>
-                  <ul class="portfolio_github">
-                    <li>
-                      <b> Github:</b>
-                      <a
-                        href="https://github.com/Alfredoeb9/ele?tab=readme-ov-file#ele-main-app"
-                        target="_blank"
-                        onclick="window.open('https://github.com/Alfredoeb9/ele?tab=readme-ov-file#ele-main-app', '_blank')"
-                        >github</a
-                      >
-                    </li>
-                    <li>
-                      <b>Kanban Board:</b>
-                      <a
-                        href="https://github.com/users/Alfredoeb9/projects/7"
-                        target="_blank"
-                        onclick="window.open('https://github.com/users/Alfredoeb9/projects/7', '_blank')"
-                        >Ele Board</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="portfolio_function">
-                  <h2 class="portfolio_functionHeading">Tech Stack:</h2>
-                  <ul class="portfolio_functionList">
-                    <li class="portfolio_functionItem">HTML5</li>
-                    <li class="portfolio_functionItem">CSS3</li>
-                    <li class="portfolio_functionItem">Next.js 14</li>
-                    <li class="portfolio_functionItem">Typescript</li>
-                    <li class="portfolio_functionItem">Tanstack React-Query</li>
-                    <li class="portfolio_functionItem">Redux</li>
-                    <li class="portfolio_functionItem">SQLite</li>
-                    <li class="portfolio_functionItem">TRPC</li>
-                    <li class="portfolio_functionItem">Drizzle ORM</li>
-                    <li class="portfolio_functionItem">TursoDB</li>
-                  </ul>
-                  <div class="portfolio_btn">
-                    <a
-                      class="portfolio_siteLink"
-                      href="https://ele-t3.vercel.app/"
-                      lang="en-us"
-                    >
-                      <button
-                        onclick="window.open('https://ele-t3.vercel.app/', '_blank')"
-                        class="portfolio_btnSite"
-                      >
-                        View The Website
+                    <figcaption>
+                      <h2 class="portfolio_title">A1 Fitness Logger</h2>
+                      <!-- <p class="portfolio_desc"></p> -->
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+        
+                    <!-- Portfolio modal 1 -->
+                    <div class="portfolio_modal">
+                      <button class="modal_close" aria-label="Modal Close">
+                        <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                          <g transform="translate(-15 -15)">
+                            <polygon
+                              class="st0"
+                              points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                            35.8,16.5 37,17.7 	"
+                            />
+                          </g>
+                        </svg>
                       </button>
-                    </a>
-                  </div>
+                      <div class="portfolio_header header-zero">
+                        <div class="portfolio_title-box">
+                          <h2 class="portfolio_title">A1 Fitness Logger</h2>
+                          <p class="portfolio_subtitle">
+                            A1 Fitness Logger is a full stack application that allows
+                            users to track their workout and track calories burned.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- / portfolio-header -->
+                      <div class="portfolio_content">
+                        <p>
+                          A1 Fitness Logger was motivated by my fitness journey,
+                          Knowingly there are other applications I could have
+                          downloaded, I wanted to create a fitness logger application of
+                          my own. The languages I used were React, Redux/
+                          Reduxjs/toolkit, Node.js, Express, Mongodb.
+                        </p>
+        
+                        <!-- <img class="portfolio-full-width portfolio-modal-image" src="img/portfolio-kingChef-modal1-web.jpg" alt="King Chef front web page image of salmon dish topped with a thin slice of lemon.">  -->
+                        <div class="portfolio_iMacContainer">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="desktop-wrapper">
+                                <video
+                                  class="fillwidth modal_video"
+                                  muted="true"
+                                  loop="true"
+                                  autoplay="true"
+                                  preload="metadata"
+                                  poster="img/a1-fitness.png"
+                                  playsinline
+                                >
+                                  <!-- <source 
+                          src="video/Kingchef-Slideshow-phone.mp4" 
+                          type="video/mp4" />                        Load for mobile phones -->
+        
+                                  <source src="video/a1-fitness.mp4" type="video/mp4" />
+                                  <!--  Load for web that load mp4 files -->
+                                </video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <!-- <button class="fullScreenVid" id="butFullScreenVid">Make Video Full Screen</button> -->
+                        <!-- <div id="portfolio-modal-content"> -->
+                        <p class="portfolio-modal-description">
+                          Upon entering A1 Fitness, unauthorized users will only be
+                          allowed to view the homepage, login, and signup views. Once
+                          users create an account, they will be allowed to track their
+                          fitness journey and calories per workout.
+                        </p>
+                        <p class="portfolio-modal-description">
+                          The mission for this application was to learn the cycle of
+                          creating a MERN style application from development to
+                          production, as well as creating a application I would enjoy
+                          creating through the very end.
+                        </p>
+        
+                        <div
+                          class="portfolio-modal-github-board portfolio-modal-description"
+                        >
+                          <h4>Want To Track my Tickets?</h4>
+                          <p>
+                            <b>Kanban Board:</b>
+                            <a
+                              href="https://github.com/users/Alfredoeb9/projects/4"
+                              target="_blank"
+                              class="buttonLink"
+                              onclick="window.open('https://github.com/users/Alfredoeb9/projects/4', '_blank')"
+                              >A1 Fitness Board</a
+                            >
+                          </p>
+        
+                          <p>
+                            <b>Github:</b>
+                            <a
+                              href="https://github.com/Alfredoeb9/Fitness-App-FrontEnd"
+                              target="_blank"
+                              class="buttonLink"
+                              onclick="window.open('https://github.com/Alfredoeb9/Fitness-App-FrontEnd', '_blank')"
+                              >A1 Fitness Github</a
+                            >
+                          </p>
+                        </div>
+        
+                        <div class="portfolio_function">
+                          <h2 class="portfolio_functionHeading">Tech Stack:</h2>
+                          <ul class="portfolio_functionList">
+                            <li class="portfolio_functionItem">HTML5</li>
+                            <li class="portfolio_functionItem">CSS3</li>
+                            <li class="portfolio_functionItem">React.js</li>
+                            <li class="portfolio_functionItem">Node.js</li>
+                            <li class="portfolio_functionItem">Express.js</li>
+                            <li class="portfolio_functionItem">Mongodb</li>
+                          </ul>
+                          <div class="portfolio_btn">
+                            <a
+                              class="portfolio_siteLink"
+                              href="https://fitness-app-front-end-eight.vercel.app/welcome"
+                              target="_blank"
+                              lang="en-us"
+                            >
+                              <button
+                                onclick="window.open('https://fitness-app-front-end-eight.vercel.app/welcome', '_blank')"
+                                class="portfolio_btnSite"
+                              >
+                                View The Website
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+                  </figure>
+        
+                  <!-- Portfolio item 1 -->
+        
+                  <figure class="portfolio_item">
+                    <img
+                      class="portfolio_image"
+                      src="img/a1-ecommerce.png"
+                      alt="Seafood plate with salmon and lemon served on a white plate."
+                    />
+                    <figcaption>
+                      <h2 class="portfolio_title">A1 Kicks</h2>
+                      <!-- <p class="portfolio_desc"></p> -->
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+        
+                    <!-- Portfolio modal 1 -->
+                    <div class="portfolio_modal">
+                      <button class="modal_close" aria-label="Modal Close">
+                        <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                          <g transform="translate(-15 -15)">
+                            <polygon
+                              class="st0"
+                              points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                            35.8,16.5 37,17.7 	"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                      <div class="portfolio_header header-one">
+                        <div class="portfolio_title-box">
+                          <h2 class="portfolio_title">A1 Kicks</h2>
+                          <p class="portfolio_subtitle">
+                            A1 Kicks is a online retail shoe eCommerce store selling
+                            modern sneakers.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- / portfolio-header -->
+                      <div class="portfolio_content">
+                        <p>
+                          A1 Kicks is a online retail shoe eCommerce store selling
+                          modern sneakers utilizing next.js, sanity.io (headless CMS),
+                          react notifications and stripe checkout.
+                        </p>
+        
+                        <div class="portfolio_iMacContainer">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="desktop-wrapper">
+                                <video
+                                  id="videoElement"
+                                  class="fillwidth modal_video"
+                                  muted="true"
+                                  loop="true"
+                                  autoplay="true"
+                                  preload="metadata"
+                                  poster="img/a1-ecommerce.png"
+                                  playsinline
+                                >
+                                  <!-- <source 
+                          src="video/Kingchef-Slideshow-phone.mp4" 
+                          type="video/mp4" />                        Load for mobile phones -->
+        
+                                  <source src="video/A1_SNKRS.mp4" type="video/mp4" />
+                                  <!--  Load for web that load mp4 files -->
+        
+                                  <!-- <source 
+                          src="video/Kingchef-Slideshow-web.mkv"
+                          type="video/mkv"/>                        Load for web that load mkv files -->
+        
+                                  <!-- <track src="subtitles-en.vtt" label="English captions" kind="captions" srclang="en"> -->
+                                </video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <!-- <button class="fullScreenVid" id="butFullScreenVid">Make Video Full Screen</button> -->
+                        <!-- <div id="portfolio-modal-content"> -->
+                        <p class="portfolio-modal-description">
+                          Upon entering A1 Kicks you will be presented with a modern,
+                          minimalistic, light contrast application. When creating this
+                          application I wanted a simple backend where a user can easily
+                          sign into, import their products as they like and then use a
+                          powerful, and fast framework like next.js to render that data.
+                          Instead of creating a whole seperate application a user would
+                          have to use to upload their products into a database. With
+                          that in mind I went ahead and used Sanity.io one of the most
+                          supported and well documented headless CMS.
+                        </p>
+                        <p class="portfolio-modal-description">
+                          The most appeling aspect of this application is the simplicity
+                          of the applications as a user and the opportunity to easily
+                          scale a application using a stack like this as a developer and
+                          as product owner.
+                          <!-- <a
+                            target="_blank"
+                            href="https://github.com/Alfredoeb9/kingchef/blob/master/mainSlideShow.js"
+                            >(slideShow)</a
+                          > -->
+                        </p>
+        
+                        <div
+                          class="portfolio-modal-github-board portfolio-modal-description"
+                        >
+                          <h4>Want To Track my Github?</h4>
+                          <p>
+                            <b>Github:</b>
+        
+                            <a
+                              href="https://github.com/Alfredoeb9/a1-ecommerce"
+                              target="_blank"
+                              class="buttonLink"
+                              onclick="window.open('https://github.com/Alfredoeb9/a1-ecommerce', '_blank')"
+                              >A1 Kicks Github</a
+                            >
+                          </p>
+                        </div>
+                        <div class="portfolio_function">
+                          <h2 class="portfolio_functionHeading">Tech Stack:</h2>
+                          <ul class="portfolio_functionList">
+                            <li class="portfolio_functionItem">HTML5</li>
+                            <li class="portfolio_functionItem">CSS3</li>
+                            <li class="portfolio_functionItem">
+                              JavaScript ES6(Babel)
+                            </li>
+                            <li class="portfolio_functionItem">React.js</li>
+                            <li class="portfolio_functionItem">Next.js</li>
+                            <li class="portfolio_functionItem">Sanity.io</li>
+                            <li class="portfolio_functionItem">Stripe</li>
+                          </ul>
+                          <div class="portfolio_btn">
+                            <a
+                              class="portfolio_siteLink"
+                              href="https://a1-ecommerce.vercel.app/"
+                              target="_blank"
+                              lang="en-us"
+                            >
+                              <button
+                                onclick="window.open('https://a1-ecommerce.vercel.app/', '_blank')"
+                                class="portfolio_btnSite"
+                              >
+                                View The Website
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /modal -->
+                  </figure>
+        
+                  <!-- Portfolio item 2 -->
+                  <figure class="portfolio_item">
+                    <img
+                      class="portfolio_image"
+                      src="img/geolocation.png"
+                      alt="Geolocation home page"
+                    />
+                    <figcaption>
+                      <h2 class="portfolio_title">Geolocation</h2>
+                      <p class="portfolio_desc"></p>
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+                    <div class="portfolio_modal">
+                      <button class="modal_close">
+                        <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                          <g transform="translate(-15 -15)">
+                            <polygon
+                              class="st0"
+                              points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                          35.8,16.5 37,17.7 	"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                      <div class="portfolio_header header-two">
+                        <div class="portfolio_title-box">
+                          <h2 class="portfolio_title">Geolocation</h2>
+                          <p class="portfolio_subtitle">
+                            Geolocation is a full stack application where users can sign
+                            up, study and take quizzes on geography.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- / portfolio-header -->
+                      <div class="portfolio_content">
+                        <p>
+                          Geolocation is a full stack application where users can sign
+                          up, study and take quizzes on geography. This application was
+                          built using React, material ui, redux, redux-thunk, Node.js,
+                          Express, Mongodb.
+                        </p>
+                        <div class="portfolio_iMacContainer">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="desktop-wrapper">
+                                <video
+                                  class="fillwidth modal_video"
+                                  playsinline
+                                  muted
+                                  loop
+                                  autoplay
+                                  preload="metadata"
+                                  width="560"
+                                  height="315"
+                                >
+                                  <source
+                                    src="video/geolocation.mp4"
+                                    type="video/mp4"
+                                  />
+        
+                                  <!-- <source
+                                    src="video/mvlLandscapeOpt.m4v"
+                                    type="video/m4v"
+                                  /> -->
+                                </video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="portfolio-modal-description">
+                          Though this application is not rich in css the main motivation
+                          behind creating this application was, I wanted to test my
+                          skill and built a full stack secure application from
+                          development to production.
+                        </p>
+                        <p class="portfolio-modal-description">
+                          The main challenge I was faced while creating geolocation was
+                          implementing the verify email/ activate user token. Through
+                          trial and error I was able to create a secure authenication
+                          method.
+                        </p>
+        
+                        <div
+                          class="portfolio-modal-github-board portfolio-modal-description"
+                        >
+                          <h4>Want To Track my Github?</h4>
+                          <p>
+                            <b>Github:</b>
+        
+                            <a
+                              href="https://github.com/Alfredoeb9/geolocation-quiz-frontend"
+                              target="_blank"
+                              class="buttonLink"
+                              onclick="window.open('https://github.com/Alfredoeb9/geolocation-quiz-frontend', '_blank')"
+                              >Geolocation Github</a
+                            >
+                          </p>
+                        </div>
+                        <div class="portfolio_function">
+                          <h2 class="portfolio_functionHeading">Tech Stack:</h2>
+                          <ul class="portfolio_functionList">
+                            <li class="portfolio_functionItem">React</li>
+                            <li class="portfolio_functionItem">Material ui</li>
+                            <li class="portfolio_functionItem">CSS3</li>
+                            <li class="portfolio_functionItem">
+                              Redux / Reduxjs/toolkit / Redux-thunk
+                            </li>
+                            <li class="portfolio_functionItem">Node.js</li>
+                            <li class="portfolio_functionItem">Express</li>
+                            <li class="portfolio_functionItem">Mongodb</li>
+                          </ul>
+                          <div class="portfolio_btn">
+                            <!-- <button class="portfolio_btnSite">
+                            <a class="portfolio_siteLink" href="" target="_blank" lang="en-us">View The Website</a>
+                          </button> -->
+                            <a
+                              class="portfolio_siteLink"
+                              href="https://geolocation-quiz-frontend.vercel.app/"
+                              lang="en-us"
+                            >
+                              <button
+                                onclick="window.open('https://geolocation-quiz-frontend.vercel.app/', '_blank')"
+                                class="portfolio_btnSite"
+                              >
+                                View The Website
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+        
+                  <!-- Portfolio item 3 -->
+                  <!-- <figure class="portfolio_item">
+                    <img
+                      class="portfolio_image"
+                      src="img/portfolio-03.jpg"
+                      alt="portfolio item"
+                    />
+                    <figcaption>
+                      <h2 class="portfolio_title">Project Name</h2>
+                      <p class="portfolio_desc">
+                        A short description could go right here
+                      </p>
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+                  </figure> -->
+        
+                  <!-- Portfolio item 4 -->
+                  <figure class="portfolio_item">
+                    <img
+                      class="portfolio_image"
+                      src="img/bStadiumThumbNail.jpg"
+                      alt="portfolio item"
+                    />
+                    <figcaption>
+                      <h2 class="portfolio_title">bStadium</h2>
+                      <p class="portfolio_desc">
+                        Building is marked with exceptional architecture, modern
+                        technologies and engineering solutions and being developed in
+                        the multifunctional quarter.
+                      </p>
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+        
+                    <div class="portfolio_modal">
+                      <button class="modal_close">
+                        <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                          <g transform="translate(-15 -15)">
+                            <polygon
+                              class="st0"
+                              points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                            35.8,16.5 37,17.7 	"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                      <div class="portfolio_header header-five">
+                        <div class="portfolio_title-box">
+                          <h2 class="portfolio_title">Business Stadium</h2>
+                          <p class="portfolio_subtitle">
+                            Building is marked with exceptional architecture, modern
+                            technologies and engineering solutions and being developed
+                            in the multifunctional quarter.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- / portfolio-header -->
+                      <div class="portfolio_content">
+                        <p>
+                          Business Stadium is a multifunctional real estate project,
+                          located in the center of Vilnius, just 700 meters from
+                          Cathedreal Square. I redesigned and refactored the website
+                          with my own code using; HTML5, CSS3 with pre-processor
+                          SASS(SCSS), JavaScript(Babel ES6), jQuery and Gulp v4 to
+                          automate all my tasks and production. Take a look at my gulp
+                          file
+                          <a href="https://github.com/Alfredoeb9/gulpv4"
+                            >(github: gulpv4)</a
+                          >
+                        </p>
+                        <div class="portfolio_iMacContainer">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="desktop-wrapper">
+                                <video
+                                  class="fillwidth modal_video"
+                                  playsinline
+                                  muted
+                                  loop
+                                  autoplay
+                                  preload="metadata"
+                                  width="560"
+                                  height="315"
+                                >
+                                  <source
+                                    src="video/BstadiumDemo-web.mp4"
+                                    type="video/mp4"
+                                  />
+        
+                                  <!-- <source
+                                    src="video/mvlLandscapeOpt.m4v"
+                                    type="video/m4v"/> -->
+                                </video>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="portfolio-modal-description">
+                          What I mainly focused on when redesigning this website was
+                          refactoring all the code to be SEO safe, 100 score in
+                          lighthouse audit, image lazy loading, and accesible across all
+                          devices.
+                        </p>
+                        <p class="portfolio-modal-description">
+                          The main challenge here was how to lazy load the images
+                          offscreen as I have never done this before but accomplished.
+                          Lazy load is when you only load a certain image file only when
+                          the image is in view of your screen to help save data on
+                          mobile and save loading assets.
+                        </p>
+        
+                        <div
+                          class="portfolio-modal-github-board portfolio-modal-description"
+                        >
+                          <h4>Want To Track my Github?</h4>
+                          <p>
+                            <b>Github:</b>
+        
+                            <a
+                              href="https://github.com/Alfredoeb9/bStadium"
+                              target="_blank"
+                              class="buttonLink"
+                              onclick="window.open('https://github.com/Alfredoeb9/bStadium', '_blank')"
+                              >bStadium Github</a
+                            >
+                          </p>
+                        </div>
+                        <div class="portfolio_function">
+                          <h2 class="portfolio_functionHeading">Tech Stack:</h2>
+                          <ul class="portfolio_functionList">
+                            <li class="portfolio_functionItem">HTML5</li>
+                            <li class="portfolio_functionItem">CSS3</li>
+                            <li class="portfolio_functionItem">SASS(SCSS)</li>
+                            <li class="portfolio_functionItem">jQuery</li>
+                            <li class="portfolio_functionItem">
+                              JavaScript ES6(Babel)
+                            </li>
+                            <li class="portfolio_functionItem">Gulp 4</li>
+                          </ul>
+                          <div class="portfolio_btn">
+                            <a
+                              class="portfolio_siteLink"
+                              href="https://b-stadium.vercel.app/index.html"
+                              lang="en-us"
+                            >
+                              <button
+                                onclick="window.open('https://b-stadium.vercel.app/index.html', '_blank')"
+                                class="portfolio_btnSite"
+                              >
+                                View The Website
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
+        
+                  <!-- Portfolio item 5 -->
+                  <figure class="portfolio_item featured">
+                    <img
+                      class="portfolio_image"
+                      src="img/eleThumbNail.png"
+                      alt="portfolio item"
+                    />
+                    <figcaption>
+                      <h2 class="portfolio_title">ELE (Work In Progress)</h2>
+                      <p class="portfolio_desc">
+                        ELE is a online tournament application where users and teams can
+                        compete against other teams for experience, and cash prizes.
+                      </p>
+                      <a href="#" class="portfolio_link">More info</a>
+                    </figcaption>
+        
+                    <div class="portfolio_modal">
+                      <button class="modal_close">
+                        <svg x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+                          <g transform="translate(-15 -15)">
+                            <polygon
+                              class="st0"
+                              points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                            35.8,16.5 37,17.7 	"
+                            />
+                          </g>
+                        </svg>
+                      </button>
+                      <div class="portfolio_header header-six">
+                        <div class="portfolio_title-box">
+                          <h2 class="portfolio_title">ELE (Work In Progress)</h2>
+                          <p class="portfolio_subtitle">
+                            ELE is a online tournament application where users and teams
+                            can compete against other teams for experience, and cash
+                            prizes.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- / portfolio-header -->
+                      <div class="portfolio_content">
+                        <p>
+                          ELE is a online tournament application, motivation behind
+                          building this applicatipm was my passion for E-Sports, and
+                          remembering the days when I would compete as a hobby as a
+                          young kid. This application is built using Javascripts most
+                          modern and production ready technologies; Next.js 14 (App
+                          Router), React.js, Typescript, Tanstack React-Query, Redux,
+                          SQLite, TRPC, Drizzle ORM, with TursoDB.
+                        </p>
+        
+                        <div>
+                          <img
+                            class="modal_image"
+                            src="img/eleThumbNail-desk.png"
+                            alt="an image"
+                          />
+                        </div>
+                        <p class="portfolio-modal-description">
+                          When brainstroming this application, thinking of what tech
+                          stack to use was the probably the most time consuming process
+                          during the inital developement. I knew I wanted something
+                          within the Javascript eco system as much as my background is
+                          in Javascript with React.js being the main framework, I was
+                          more than open to researching other frameworks other than
+                          React.js, but when it came down to reading into multiple
+                          framework docs it only made me realize why I always come back
+                          to react.js. With the finalized decision that react.js would
+                          be my framework I have heard read and seen great production
+                          ready applications using Next.js as their framework and made
+                          the ultimate decision to use Next.js.
+                        </p>
+                        <p class="portfolio-modal-description">
+                          The main challenge here after deciding Next.js as my framework
+                          was what other technology should I use with Next.js, should I
+                          prisma as my ORM or adopt the new
+                          <a target="_blank" href="https://orm.drizzle.team/"
+                            >"if you now sql you know drizzle"</a
+                          >. What SQL database should I use, MySQL, or PostSQL along
+                          side which database provider should I use. After extensive
+                          research and a few trail and errors I have found a stack I
+                          love using and makes me happy to code in and that tech stack
+                          being ... woah woah woah being as I created this applications
+                          using MySQL with Planetscale, a few weeks after writing this
+                          planetscale had decided to
+                          <a
+                            href="https://planetscale.com/docs/concepts/hobby-plan-deprecation-faq"
+                            target="_blank"
+                            onclick="window.open('https://planetscale.com/docs/concepts/hobby-plan-deprecation-faq', '_blank')"
+                            >remove their free trial</a
+                          >
+                          so with this news I then did some more research and found
+                          another trustworthy Database provider with a robust, fast, and
+                          scaleable application and that being
+                          <a
+                            onclick="window.open('https://turso.tech/', '_blank')"
+                            href="https://turso.tech/"
+                            >TursoDB</a
+                          >
+                          Next.js 14 (App Router), React.js, Tanstack React-Query,
+                          Redux, SQLite, TRPC, Drizzle ORM, with TursoDB.
+                        </p>
+        
+                        <div
+                          class="portfolio-modal-description portfolio-modal-github-board"
+                        >
+                          <p>Follow along the code journey</p>
+                          <ul class="portfolio_github">
+                            <li>
+                              <b> Github:</b>
+                              <a
+                                href="https://github.com/Alfredoeb9/ele?tab=readme-ov-file#ele-main-app"
+                                target="_blank"
+                                onclick="window.open('https://github.com/Alfredoeb9/ele?tab=readme-ov-file#ele-main-app', '_blank')"
+                                >github</a
+                              >
+                            </li>
+                            <li>
+                              <b>Kanban Board:</b>
+                              <a
+                                href="https://github.com/users/Alfredoeb9/projects/7"
+                                target="_blank"
+                                onclick="window.open('https://github.com/users/Alfredoeb9/projects/7', '_blank')"
+                                >Ele Board</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="portfolio_function">
+                          <h2 class="portfolio_functionHeading">Tech Stack:</h2>
+                          <ul class="portfolio_functionList">
+                            <li class="portfolio_functionItem">HTML5</li>
+                            <li class="portfolio_functionItem">CSS3</li>
+                            <li class="portfolio_functionItem">Next.js 14</li>
+                            <li class="portfolio_functionItem">Typescript</li>
+                            <li class="portfolio_functionItem">Tanstack React-Query</li>
+                            <li class="portfolio_functionItem">Redux</li>
+                            <li class="portfolio_functionItem">SQLite</li>
+                            <li class="portfolio_functionItem">TRPC</li>
+                            <li class="portfolio_functionItem">Drizzle ORM</li>
+                            <li class="portfolio_functionItem">TursoDB</li>
+                          </ul>
+                          <div class="portfolio_btn">
+                            <a
+                              class="portfolio_siteLink"
+                              href="https://ele-t3.vercel.app/"
+                              lang="en-us"
+                            >
+                              <button
+                                onclick="window.open('https://ele-t3.vercel.app/', '_blank')"
+                                class="portfolio_btnSite"
+                              >
+                                View The Website
+                              </button>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </figure>
                 </div>
-              </div>
-            </div>
-          </figure>
+              </li>
+            </ul>
+
+          </div>
+
+          
+
+          <button class="carousel_button carousel_button--right">
+            <i>></i>
+          </button>
         </div>
+        
       </section>
 
       <!-- <section class="contact" id="contact">
