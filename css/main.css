@@ -1375,10 +1375,10 @@ main {
 }
 .portfolio_modal {
   position: fixed;
-  z-index: 10;
+  z-index: 200;
   top: 2em;
   bottom: 2em;
-  left: 8em;
+  left: 6em;
   right: 2em;
   background: #fff;
   -webkit-box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.5);
@@ -1871,6 +1871,37 @@ template {
   margin: 0 auto;
 }
 
+.portfolio_item {
+  height: 100%
+}
+
+
+.portfolio_items {
+  height: 90%;
+}
+
+.portfolio_image {
+  height: 100%;
+}
+
+@media (max-width: 62em) {
+  .carousel {
+    height: 85vh;
+  }
+
+  .portfolio_items {
+    height: 90%;
+  }
+
+  .portfolio_item {
+    height: 100%
+  }
+
+  .portfolio_image {
+    height: 100%;
+  }
+}
+
 .carousel_button {
   position: absolute;
   top: 43%;
@@ -1881,6 +1912,7 @@ template {
   background-color: #efefef;
   border: none;
   cursor: pointer;
+  z-index: 100;
 }
 
 .carousel_button i {
@@ -1901,7 +1933,7 @@ template {
 }
 
 .carousel_track-container {
-  background: #90ee90;
+  /* background: #90ee90; */
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -1926,8 +1958,12 @@ template {
   width: 100%;
 }
 
+.second_track_modal {
+  transform: translateX(2050px);
+}
+
 .carousel .current-slide {
-  background: rgba(0, 0, 0, 0.75);
+  /* background: rgba(0, 0, 0, 0.75); */
 }
 /* .carousel_image {
   width: 100%;

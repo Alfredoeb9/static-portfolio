@@ -1,6 +1,7 @@
 'use strict'
 var focusedElementBeforeModal,
   portfolioContainer = document.querySelector('.portfolio_items'),
+  portfolioSecond = document.querySelector('.second_port'),
   trueModal = document.querySelector('.portfolio_modal'),
   page = document.querySelector('html'),
   main = document.querySelector('main'),
@@ -110,6 +111,60 @@ function ready(e) {
     ? e()
     : document.addEventListener('DOMContentLoaded', e)
 }
+
+portfolioSecond?.addEventListener('click', function (e) {
+  // e.preventDefault();
+  (focusedElementBeforeModal = document.activeElement),
+    trueModal.addEventListener('keydown', function (e) {
+      'Tab' === e.key &&
+        (e.shiftKey
+          ? document.activeElement === r && (e.preventDefault(), l.focus())
+          : document.activeElement === l && (e.preventDefault(), r.focus()))
+    }),
+    e.preventDefault()
+
+  var portfolioLinkTarget = e.target.closest('.portfolio_link')
+
+  if (portfolioLinkTarget) {
+    var portfolioNextSibling =
+        portfolioLinkTarget.parentNode.nextElementSibling,
+      modalClose = portfolioNextSibling.querySelector('.modal_close'),
+      removeClassandEvent = function removeProperties(portfolioLinkTarget) {
+        portfolioNextSibling.classList.remove('is-open'),
+          portfolioNextSibling.removeEventListener(
+            'animationend',
+            removeProperties
+          )
+      }
+    modalClose.addEventListener('click', function () {
+      ;(portfolioNextSibling.style.animation = 'modalOut 500ms forwards'),
+        portfolioNextSibling.addEventListener(
+          'animationend',
+          removeClassandEvent
+        )
+    }),
+      document.addEventListener('keydown', function (e) {
+        'Esc' === e.key ||
+          ('Escape' === e.key &&
+            ((portfolioNextSibling.style.animation = 'modalOut 500ms forwards'),
+            portfolioNextSibling.addEventListener(
+              'animationend',
+              removeClassandEvent
+            ),
+            (document.body.style.overflowY = 'scroll')))
+      })
+    var i = trueModal.querySelectorAll(
+        'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]'
+      ),
+      r = (i = Array.prototype.slice.call(i))[0],
+      l = i[i.length - 1]
+    r.focus(),
+      portfolioNextSibling.classList.add('is-open'),
+      (portfolioNextSibling.style.animation = 'modalIn 500ms forwards')
+  }
+})
+
+
 
 portfolioContainer?.addEventListener('click', function (e) {
   ;(focusedElementBeforeModal = document.activeElement),
